@@ -11,4 +11,87 @@
     width: 100%;
     background: url('../image/edging-top.png') repeat-x;
   }
+  &_left{
+    float: left;
+  }
+  &_right{
+    float: right;
+    text-align: right;
+    //width: 300px;
+  }
+  &_logo{
+    display: block;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 168px;
+    height: 116px;
+    margin: 72px 0px 0px 0px;
+    background: url('../image/logo.png') no-repeat;
+  }
+  &_slang{
+    font-family: MyriadProItalic;
+    font-size: 16px;
+    margin: 10px 0px 0px 0px;
+    width: 168px;
+    text-align: center;
+  }
+  &_phone{
+    margin: 100px 0px 32px 0px;
+    p{
+      font-size: 20px;
+      margin: 0px 0px 6px 0px;
+      &:first-child{
+        position: relative;
+        &:before{
+          background: url("../image/phone.png") 0px 0px no-repeat;
+          content: "";
+          display: inline-block;
+          width: 20px;
+          height: 20px;
+          position: absolute;
+          left: -33px;
+          top: 3px;
+        }
+        @include old-ie{
+          *zoom: expression(
+            this.runtimeStyle.zoom="1",
+            this.appendChild( document.createElement("small") ).className="before"
+          );
+          .before{
+            background: url("../image/phone.png") 0px 0px no-repeat;
+            width: 20px;
+            height: 20px;      
+            position: absolute;
+            left: -33px;
+            top: 3px; 
+          }
+        }
+      }
+    }
+  }
+  &_calc{
+    margin: 0px 0px 19px 0px;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    //float: right;
+    width: 121px;
+    height: 78px;
+    background: url('../image/calc.png') no-repeat;
+  }
+  &_actions{
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    //float: right;
+    width: 95px;
+    height: 33px;
+    background: url('../image/actions.png') no-repeat;
+  }
+  &_wrap{
+    text-align: right;
+  }
 }

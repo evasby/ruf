@@ -1,3 +1,27 @@
+/*&:before{
+  background: url("../image/sub.png") 0px 0px no-repeat;
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 12px;
+  position: absolute;
+  left: -1px;
+  top: 2px;
+}
+@include old-ie{
+  *zoom: expression(
+    this.runtimeStyle.zoom="1",
+    this.appendChild( document.createElement("small") ).className="before"
+  );
+  .before{
+    background: url("../image/sub.png") 0px 0px no-repeat;
+    width: 20px;
+    height: 12px;      
+    position: absolute;
+    left: -1px;
+    top: 2px; 
+  }
+}*/
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -57,8 +81,22 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 @font-face {
   font-family: "MyriadProBold";
-  src: url("../fonts/MyriadProBold/MyriadProBold.eot");
-  src: url("../fonts/MyriadProBold/MyriadProBold.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadProBold/MyriadProBold.woff") format("woff"), url("../fonts/MyriadProBold/MyriadProBold.ttf") format("truetype");
+  src: url("../fonts/MyriadProBold.eot");
+  src: url("../fonts/MyriadProBold.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadProBold.woff") format("woff"), url("../fonts/MyriadProBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "MyriadProItalic";
+  src: url("../fonts/MyriadProItalic.eot");
+  src: url("../fonts/MyriadProItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadProItalic.woff") format("woff"), url("../fonts/MyriadProItalic.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "MyriadProRegular";
+  src: url("../fonts/MyriadProRegular.eot");
+  src: url("../fonts/MyriadProRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadProRegular.woff") format("woff"), url("../fonts/MyriadProRegular.ttf") format("truetype");
   font-style: normal;
   font-weight: normal;
 }
@@ -134,6 +172,129 @@ textarea:focus {
   height: 27px;
   width: 100%;
   background: url("../image/edging-top.png") repeat-x;
+}
+.header_left {
+  float: left;
+}
+.header_right {
+  float: right;
+  text-align: right;
+}
+.header_logo {
+  display: block;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 168px;
+  height: 116px;
+  margin: 72px 0px 0px 0px;
+  background: url("../image/logo.png") no-repeat;
+}
+.header_slang {
+  font-family: MyriadProItalic;
+  font-size: 16px;
+  margin: 10px 0px 0px 0px;
+  width: 168px;
+  text-align: center;
+}
+.header_phone {
+  margin: 100px 0px 32px 0px;
+}
+.header_phone p {
+  font-size: 20px;
+  margin: 0px 0px 6px 0px;
+}
+.header_phone p:first-child {
+  position: relative;
+  *zoom: expression( this.runtimeStyle.zoom="1", this.appendChild( document.createElement("small") ).className="before" );
+}
+.header_phone p:first-child:before {
+  background: url("../image/phone.png") 0px 0px no-repeat;
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: -33px;
+  top: 3px;
+}
+.header_phone p:first-child .before {
+  background: url("../image/phone.png") 0px 0px no-repeat;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: -33px;
+  top: 3px;
+}
+.header_calc {
+  margin: 0px 0px 19px 0px;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+  width: 121px;
+  height: 78px;
+  background: url("../image/calc.png") no-repeat;
+}
+.header_actions {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+  width: 95px;
+  height: 33px;
+  background: url("../image/actions.png") no-repeat;
+}
+.header_wrap {
+  text-align: right;
+}
+
+.plus {
+  margin: 30px 0px 0px 0px;
+}
+.plus_item {
+  font-family: MyriadProRegular;
+  font-size: 13px;
+  position: relative;
+  margin: 10px 0px 0px 0px;
+  padding: 0px 0px 0px 22px;
+  *zoom: expression( this.runtimeStyle.zoom="1", this.appendChild( document.createElement("small") ).className="before" );
+}
+.plus_item:before {
+  background: url("../image/plus.png") 0px 0px no-repeat;
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 17px;
+  position: absolute;
+  left: 0px;
+  top: -2px;
+}
+.plus_item .before {
+  background: url("../image/plus.png") 0px 0px no-repeat;
+  width: 16px;
+  height: 17px;
+  position: absolute;
+  left: 0px;
+  top: -2px;
+}
+.plus_item__2:before {
+  background-position: -16px 0px;
+}
+.plus_item__2 .before {
+  background-position: -16px 0px;
+}
+.plus_item__3:before {
+  background-position: -32px 0px;
+}
+.plus_item__3 .before {
+  background-position: -32px 0px;
+}
+.plus_item__4:before {
+  background-position: -48px 0px;
+}
+.plus_item__4 .before {
+  background-position: -48px 0px;
 }
 
 .footer {
