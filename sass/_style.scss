@@ -1,23 +1,31 @@
 ﻿@import "mymix";
+@import "fonts";
 //**********************************************************/
 //**********************************************************/
 body{
-
+  font-family: Arial, Helvetica, sans-serif;
+  color: #0c0c0c;
+  font-size: 14px;
+  background: url('../image/bac.jpg') repeat;
+}
+p{
+  font-family: Arial, Helvetica, sans-serif;
+  color: #0c0c0c;
+  font-size: 14px;
+}
+a{
+  @include link(#f8a43d, #f8a43d);
+  &:focus{
+    outline: none;
+  }
 }
 pre{
   white-space: normal;
 }
 h1{
-
-}
-a:focus{
-  outline: none;
-}
-input:focus{
-  outline: none;
-}
-textarea:focus{
-  outline: none;
+  font-family: MyriadProBold, Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  color: #f68a07;
 }
 input::-moz-placeholder {
 
@@ -32,15 +40,20 @@ textarea::-webkit-input-placeholder{
 
 }
 input{
-
+  &:focus{
+    outline: none;
+  }
 }
 textarea{
-
+   &:focus{
+    outline: none;
+  }
 }
-
 .hide{
   display: none;
 }
 //**********************************************************/
 //**********************************************************/
-//@import "inner";
+@import "inner";
+@import "header";
+@import "footer";

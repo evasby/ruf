@@ -1,0 +1,14 @@
+.header{
+  box-sizing: border-box;
+  height: 398px;
+  position: relative;
+  background: url('../image/header.png') center bottom no-repeat;
+  &_edge{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 27px;
+    width: 100%;
+    background: url('../image/edging-top.png') repeat-x;
+  }
+}
