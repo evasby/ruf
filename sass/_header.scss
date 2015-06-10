@@ -80,6 +80,10 @@
     width: 121px;
     height: 78px;
     background: url('../image/calc.png') no-repeat;
+    @include def-transition(transform, 0.1s);
+    &:hover{
+      @include scale(1.05);
+    }
   }
   &_actions{
     text-indent: 100%;

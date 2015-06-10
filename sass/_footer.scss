@@ -1,7 +1,9 @@
 .footer{
   box-sizing: border-box;
-  min-height: 244px;
+  padding: 23px 0px 0px 0px;
+  height: 244px;
   position: relative;
+  background: url('../image/footer-bottom.png') 0px 14px repeat-x;
   &_top{
     position: absolute;
     top: 0px;
@@ -10,12 +12,24 @@
     height: 14px;
     background: url('../image/footer-top.jpg') repeat-x;
   }
-  &_bottom{
+  /*&_bottom{
     position: absolute;
     top: 14px;
     left: 0px;
     width: 100%;
     height: 230px;
     background: url('../image/footer-bottom.png') repeat-x;
+  }*/
+  &_address{
+    float: left;
+    width: 177px;
+    height: 100px;
+    background-color: #ccc;
+  }
+  &_phone{
+    float: left;
+    width: 177px;
+    height: 100px;
+    background-color: #ccc;
   }
 }
