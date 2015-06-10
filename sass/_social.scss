@@ -1,0 +1,58 @@
+.social{
+	&_link{
+		display: inline-block;
+		@include old-ie{
+      display : inline;
+      zoom : 1;
+    }
+    margin: 0px 3px 0px 0px;
+    width: 20px;
+    height: 18px;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    background: url('../image/social.png') 0px 0px no-repeat;
+
+    &__ok{
+			background-position: -30px 0px;
+    }
+    &__fb{
+			background-position: -59px 0px;
+    }
+    &__ig{
+			background-position: -87px 0px;
+    }
+    &__tt{
+			background-position: -114px 0px;
+    }
+		@include def-opacity(0.8);
+		@include def-transition(opacity, 0.2s);
+    &:hover{
+    	@include def-opacity(1);
+    	/*-webkit-animation-name: spin;
+      -webkit-animation-duration: 100ms;
+      -moz-animation-name: spin;
+      -moz-animation-duration: 1000ms;
+      -ms-animation-name: spin;
+      -ms-animation-duration: 100ms;
+      animation-name: spin;
+      animation-duration: 1000ms;
+      @-ms-keyframes spin {
+        0%, 100% {opacity: 1;} 
+    		50% {opacity: 0;}
+      }
+      @-moz-keyframes spin {
+				0%, 100% {opacity: 0;} 
+    		50% {opacity: 0.2;}
+      }
+      @-webkit-keyframes spin {
+				0%, 100% {opacity: 1;} 
+    		50% {opacity: 0;}
+      }
+      @keyframes spin {
+				0%, 100% {@include scale(1);} 
+    		50% {@include scale(1.1);}
+      }*/
+    }
+	}
+}

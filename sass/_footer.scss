@@ -20,16 +20,32 @@
     height: 230px;
     background: url('../image/footer-bottom.png') repeat-x;
   }*/
+  &_wrap{
+  	overflow: hidden;
+  }
   &_address{
     float: left;
-    width: 177px;
-    height: 100px;
-    background-color: #ccc;
+    width: 178px;
+    p{
+    	margin: 0px 0px 10px 0px;
+    }
+  }
+  &_rightblock{
+    float: left;
+    width: 176px;
+    text-align: right;
   }
   &_phone{
-    float: left;
-    width: 177px;
-    height: 100px;
-    background-color: #ccc;
+  	p{
+  		margin: 0px 0px 10px 0px;
+  	}
+  }
+  &_email{
+  	margin: 0px 0px 24px 0px;
+  	a{
+  		@include link(#31c0ef, #31c0ef);
+  		text-decoration: none;
+  		border-bottom: 1px solid #31c0ef;
+  	}
   }
 }

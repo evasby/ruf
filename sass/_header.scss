@@ -82,7 +82,32 @@
     background: url('../image/calc.png') no-repeat;
     @include def-transition(transform, 0.1s);
     &:hover{
-      @include scale(1.05);
+      //@include scale(1.05);
+
+      -webkit-animation-name: spin;
+      -webkit-animation-duration: 300ms;
+      -moz-animation-name: spin;
+      -moz-animation-duration: 300ms;
+      -ms-animation-name: spin;
+      -ms-animation-duration: 300ms;
+      animation-name: spin;
+      animation-duration: 300ms;
+      @-ms-keyframes spin {
+        0%, 100% {@include scale(1);} 
+        50% {@include scale(1.05);}
+      }
+      @-moz-keyframes spin {
+        0%, 100% {@include scale(1);} 
+        50% {@include scale(1.05);}
+      }
+      @-webkit-keyframes spin {
+        0%, 100% {@include scale(1);} 
+        50% {@include scale(1.05);}
+      }
+      @keyframes spin {
+        0%, 100% {@include scale(1);} 
+        50% {@include scale(1.05);}
+      }
     }
   }
   &_actions{
@@ -94,6 +119,12 @@
     width: 95px;
     height: 33px;
     background: url('../image/actions.png') no-repeat;
+    @include def-transition(0.2s);
+    &:hover{
+      //@include double(10, 1.05);
+      //@include scale(1.1);
+      @include rotate(10);
+    }
   }
   &_wrap{
     text-align: right;

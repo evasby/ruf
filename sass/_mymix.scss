@@ -236,6 +236,14 @@
 @mixin skew ($x, $y) {
    @include transform(skew(#{$x}deg, #{$y}deg));
 }
+// double
+@mixin double ($deg, $scale) {
+   -moz-transform: rotate(#{$deg}deg) scale($scale);
+     -o-transform: rotate(#{$deg}deg) scale($scale);
+    -ms-transform: rotate(#{$deg}deg) scale($scale);
+-webkit-transform: rotate(#{$deg}deg) scale($scale);
+        transform: rotate(#{$deg}deg) scale($scale);
+}
 //*********************************************************************************/
 //*********************************************************************************/
 /*&:before{
