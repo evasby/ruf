@@ -1,0 +1,108 @@
+.topmenu{
+  &_link{
+    font-size: 13px;
+    @include link(#000000, #fa7500);
+    text-decoration: none;
+    display: block;
+    height: 21px;
+    text-align: center;
+    padding: 7px 0px 0px 0px;
+    background-color: #f9f5e4;
+    @include def-transition(all, 0.1s);
+    &:hover{
+      //background-color: #f8a43d;
+    }
+    &__l2{
+      text-align: left;
+      padding: 7px 0px 0px 14px;
+      &:hover{
+        background-color: transparent;
+        @include link(#000000, #000000);
+        @include def-h-gradient(#e9debd, #f9f5e4)
+      }
+    }
+  }
+  &_list{
+    margin    : 0;
+    padding   : 0;
+    display   : table;
+    width   : 100%;
+    //table-layout: fixed;
+    &__l2{
+      display: none;
+      position: absolute;
+      top: 28px;
+      left: -1px;
+      z-index: 1;
+      border: 1px solid #e7ba7d;
+      border-top: none;
+    }
+  }
+
+  &_item{
+    //width   : 13%;
+    position: relative;
+    //overflow: hidden;
+    border: 1px solid #dadace;
+    border-right: none;
+    vertical-align:top; 
+    width: 1%;
+    white-space:nowrap;
+    display   : table-cell;
+    &:first-child{
+      @include def-border-radiuses(0px, 0px, 5px, 5px);
+      .topmenu_link{
+        @include def-border-radiuses(0px, 0px, 5px, 5px);
+      }
+    }
+    &:last-child{
+      border-right: 1px solid #dadace;
+      @include def-border-radiuses(5px, 5px, 0px, 0px);
+      .topmenu_link{
+        @include def-border-radiuses(5px, 5px, 0px, 0px);
+      }
+    }
+    &:hover{
+      border-color: #e7ba7d;
+      border-color: #e7ba7d;
+      border-color: #e7ba7d;
+      & + li {
+        border-left: 1px solid #e7ba7d;
+      }
+      .topmenu_list__l2{
+        display: block;
+      }
+    }
+    @include old-ie{
+      * html & {
+        display: inline;
+        zoom: 1;
+      }
+    }
+    &__l2{
+      display: list-item;
+      width: auto;
+      border: none;
+      &:first-child{
+        border-left: none;
+        @include def-border-radiuses(0px, 0px, 0px, 0px);
+        .topmenu_link{
+          @include def-border-radiuses(0px, 0px, 0px, 0px);
+        }
+      }
+      &:last-child{
+        border-right: none;
+        @include def-border-radiuses(0px, 0px, 0px, 0px);
+        .topmenu_link{
+          @include def-border-radiuses(0px, 0px, 0px, 0px);
+        }
+      }
+      &:hover{
+        border: none;
+        & + li {
+          border-left: none;
+        }
+      }
+    }
+  }
+}

@@ -129,4 +129,8 @@
   &_wrap{
     text-align: right;
   }
+  &_center{
+    @include def-clearfix2();
+    min-height: 400px;
+  }
 }
