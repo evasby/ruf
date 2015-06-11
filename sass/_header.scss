@@ -80,10 +80,36 @@
     width: 121px;
     height: 78px;
     background: url('../image/calc.png') no-repeat;
-    @include def-transition(transform, 0.1s);
+    //@include def-transition(transform, 0.3s);
+    -webkit-animation-name: spin2;
+    -webkit-animation-duration: 300ms;
+    -moz-animation-name: spin2;
+    -moz-animation-duration: 300ms;
+    -ms-animation-name: spin2;
+    -ms-animation-duration: 300ms;
+    animation-name: spin2;
+    animation-duration: 300ms;
+    @-ms-keyframes spin2 {
+      0% {@include scale(0.9);} 
+      50% {@include scale(1.05);}
+      100% {@include scale(1);} 
+    }
+    @-moz-keyframes spin2 {
+      0% {@include scale(0.9);} 
+      50% {@include scale(1.05);}
+      100% {@include scale(1);} 
+    }
+    @-webkit-keyframes spin2 {
+      0% {@include scale(0.9);} 
+      50% {@include scale(1.05);}
+      100% {@include scale(1);} 
+    }
+    @keyframes spin2 {
+      0% {@include scale(0.9);} 
+      50% {@include scale(1.05);}
+      100% {@include scale(1);} 
+    }
     &:hover{
-      //@include scale(1.05);
-
       -webkit-animation-name: spin;
       -webkit-animation-duration: 300ms;
       -moz-animation-name: spin;
@@ -93,21 +119,26 @@
       animation-name: spin;
       animation-duration: 300ms;
       @-ms-keyframes spin {
-        0%, 100% {@include scale(1);} 
+        0% {@include scale(1);} 
         50% {@include scale(1.05);}
+        100% {@include scale(0.9);} 
       }
       @-moz-keyframes spin {
-        0%, 100% {@include scale(1);} 
+        0% {@include scale(1);} 
         50% {@include scale(1.05);}
+        100% {@include scale(0.9);} 
       }
       @-webkit-keyframes spin {
-        0%, 100% {@include scale(1);} 
+        0% {@include scale(1);} 
         50% {@include scale(1.05);}
+        100% {@include scale(0.9);} 
       }
       @keyframes spin {
-        0%, 100% {@include scale(1);} 
+        0% {@include scale(1);} 
         50% {@include scale(1.05);}
+        100% {@include scale(0.9);} 
       }
+      @include scale(0.9);
     }
   }
   &_actions{

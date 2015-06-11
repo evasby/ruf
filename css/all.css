@@ -227,11 +227,106 @@ textarea:focus {
   width: 121px;
   height: 78px;
   background: url("../image/calc.png") no-repeat;
-  -webkit-transition: transform 0.1s ease-in-out;
-  -moz-transition: transform 0.1s ease-in-out;
-  -o-transition: transform 0.1s ease-in-out;
-  -ms-transition: transform 0.1s ease-in-out;
-  transition: transform 0.1s ease-in-out;
+  -webkit-animation-name: spin2;
+  -webkit-animation-duration: 300ms;
+  -moz-animation-name: spin2;
+  -moz-animation-duration: 300ms;
+  -ms-animation-name: spin2;
+  -ms-animation-duration: 300ms;
+  animation-name: spin2;
+  animation-duration: 300ms;
+}
+@-ms-keyframes spin2 {
+  0% {
+    -moz-transform: scale(0.9);
+    -o-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+  50% {
+    -moz-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+  }
+  100% {
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@-moz-keyframes spin2 {
+  0% {
+    -moz-transform: scale(0.9);
+    -o-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+  50% {
+    -moz-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+  }
+  100% {
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@-webkit-keyframes spin2 {
+  0% {
+    -moz-transform: scale(0.9);
+    -o-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+  50% {
+    -moz-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+  }
+  100% {
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@keyframes spin2 {
+  0% {
+    -moz-transform: scale(0.9);
+    -o-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+  50% {
+    -moz-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+  }
+  100% {
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
 }
 .header_calc:hover {
   -webkit-animation-name: spin;
@@ -242,9 +337,14 @@ textarea:focus {
   -ms-animation-duration: 300ms;
   animation-name: spin;
   animation-duration: 300ms;
+  -moz-transform: scale(0.9);
+  -o-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  -webkit-transform: scale(0.9);
+  transform: scale(0.9);
 }
 @-ms-keyframes spin {
-  0%, 100% {
+  0% {
     -moz-transform: scale(1);
     -o-transform: scale(1);
     -ms-transform: scale(1);
@@ -257,10 +357,17 @@ textarea:focus {
     -ms-transform: scale(1.05);
     -webkit-transform: scale(1.05);
     transform: scale(1.05);
+  }
+  100% {
+    -moz-transform: scale(0.9);
+    -o-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
   }
 }
 @-moz-keyframes spin {
-  0%, 100% {
+  0% {
     -moz-transform: scale(1);
     -o-transform: scale(1);
     -ms-transform: scale(1);
@@ -273,10 +380,17 @@ textarea:focus {
     -ms-transform: scale(1.05);
     -webkit-transform: scale(1.05);
     transform: scale(1.05);
+  }
+  100% {
+    -moz-transform: scale(0.9);
+    -o-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
   }
 }
 @-webkit-keyframes spin {
-  0%, 100% {
+  0% {
     -moz-transform: scale(1);
     -o-transform: scale(1);
     -ms-transform: scale(1);
@@ -289,10 +403,17 @@ textarea:focus {
     -ms-transform: scale(1.05);
     -webkit-transform: scale(1.05);
     transform: scale(1.05);
+  }
+  100% {
+    -moz-transform: scale(0.9);
+    -o-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
   }
 }
 @keyframes spin {
-  0%, 100% {
+  0% {
     -moz-transform: scale(1);
     -o-transform: scale(1);
     -ms-transform: scale(1);
@@ -305,6 +426,13 @@ textarea:focus {
     -ms-transform: scale(1.05);
     -webkit-transform: scale(1.05);
     transform: scale(1.05);
+  }
+  100% {
+    -moz-transform: scale(0.9);
+    -o-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
   }
 }
 .header_actions {
@@ -440,13 +568,20 @@ textarea:focus {
   width: 100%;
 }
 .topmenu_list__l2 {
-  display: none;
+  display: block;
+  max-height: 0px;
+  overflow: hidden;
   position: absolute;
   top: 28px;
   left: -1px;
   z-index: 1;
-  border: 1px solid #e7ba7d;
+  border: 1px solid #dadace;
   border-top: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 .topmenu_item {
   position: relative;
@@ -456,6 +591,11 @@ textarea:focus {
   width: 1%;
   white-space: nowrap;
   display: table-cell;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 .topmenu_item:first-child {
   -webkit-border-top-right-radius: 0px;
@@ -535,7 +675,9 @@ textarea:focus {
   border-left: 1px solid #e7ba7d;
 }
 .topmenu_item:hover .topmenu_list__l2 {
-  display: block;
+  border: 1px solid #e7ba7d;
+  border-top: none;
+  max-height: 300px;
 }
 .topmenu_item__l2 {
   display: list-item;
