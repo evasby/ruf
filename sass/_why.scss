@@ -1,0 +1,42 @@
+.why{
+  &_list{
+    overflow: hidden;
+    padding: 33px 0px 28px 0px;
+  }
+  &_item{
+    box-sizing: border-box;
+    font-family: MyriadProBold;
+    font-size: 16px;
+    line-height: 1.2;
+    color: #54524f;
+    float: left;
+    width: 33.33%;
+    height: 30px;
+    padding: 0px 0px 53px 48px;
+    position: relative;
+    &:before{
+      background: url("../image/check.png") 0px 0px no-repeat;
+      content: "";
+      display: inline-block;
+      width: 21px;
+      height: 21px;
+      position: absolute;
+      left: 13px;
+      top: 1px;
+    }
+    @include old-ie{
+      *zoom: expression(
+        this.runtimeStyle.zoom="1",
+        this.appendChild( document.createElement("small") ).className="before"
+      );
+      .before{
+        background: url("../image/check.png") 0px 0px no-repeat;
+        width: 21px;
+        height: 21px;      
+        position: absolute;
+        left: 0px;
+        top: 1px; 
+      }
+    }
+  }
+}

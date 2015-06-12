@@ -1,0 +1,10 @@
+.gradtitle{
+  font-family: MyriadProBold;
+  font-size: 20px;
+  color: #f68a07;
+  text-transform: uppercase;
+  height: 28px;
+  padding: 7px 0px 0px 11px;
+  @include def-h-gradient(#fceed1, #fdfffa);
+  @include def-border-radius(5px);
+}

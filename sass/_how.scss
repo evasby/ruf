@@ -1,0 +1,28 @@
+.how{
+  border: 1px solid #f8af3b;
+  @include def-border-radius(5px);
+  box-sizing: border-box;
+  width: 264px;
+  padding: 14px 0px 30px 0px;
+  margin: 0px 0px 24px 0px;
+  background: url('../image/how.png') 8px 67px no-repeat;
+  &_title{
+    font-family: MyriadProBold;
+    color: #72c325;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0px 0px 38px 0px;
+  }
+  p{
+    margin: 0px 14px 0px 67px;
+    height: 77px;
+    hyphens: auto;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    &:last-child{
+      height: auto;
+    }
+  }
+}
