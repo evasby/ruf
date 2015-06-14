@@ -143,7 +143,9 @@
   }
   display: inline-block;
   // start commented backslash hack
-  * html & { height: 1%; }
+  @include old-ie{
+    * html & { height: 1%; }
+  }
   display: block;
   // close commented backslash hack
 }

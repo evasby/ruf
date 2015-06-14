@@ -12,6 +12,9 @@ p{
   font-family: Arial, Helvetica, sans-serif;
   color: #0c0c0c;
   font-size: 14px;
+  .rcontent & {
+    line-height: 1.5;
+  }
 }
 a{
   @include link(#f8a43d, #f8a43d);
@@ -26,6 +29,8 @@ h1{
   font-family: MyriadProBold, Arial, Helvetica, sans-serif;
   font-size: 20px;
   color: #f68a07;
+  text-transform: uppercase;
+  margin: 0px 0px 12px 0px;
 }
 input::-moz-placeholder {
 
@@ -65,7 +70,11 @@ textarea{
 @import "lmenu";
 
 @import "content";
+@import "lcontent";
 @import "rcontent";
+
+@import "orderlink";
+@import "reviewsblock";
 
 @import "how";
 @import "why";
