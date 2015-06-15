@@ -17,7 +17,7 @@ p{
   }
 }
 a{
-  @include link(#f8a43d, #f8a43d);
+  @include link(#f69c39, #f8a43d);
   &:focus{
     outline: none;
   }
@@ -61,6 +61,7 @@ textarea{
 //**********************************************************/
 @import "gradtitle";
 @import "breadcrumb";
+@import "mypager";
 
 @import "inner";
 @import "header";
@@ -78,10 +79,18 @@ textarea{
 
 @import "how";
 @import "why";
-@import "reviews";
+@import "reviewsfront";
 @import "sale";
 @import "footer";
 @import "menubottom";
 @import "menucatalogbottom";
 @import "social";
 @import "webformat";
+
+
+@import "actions";
+@import "action";
+@import "otheractions";
+
+@import "reviews";
+

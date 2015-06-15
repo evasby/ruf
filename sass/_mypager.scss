@@ -1,0 +1,40 @@
+.mypager{
+  text-align: center;
+  &_list{
+    @include def-clearfix2();
+    display: inline-block;
+    margin: 0 auto;
+  }
+  &_item{
+    float: left;
+    display: block;
+    width: 37px;
+    height: 26px;
+    margin: 0px 4px 0px 4px;
+    padding: 11px 0px 0px 0px;
+    &__current{
+      color: #ffffff;
+      background-color: #72c325;
+    }
+    a{
+      @include link(#6f6f6f, #6f6f6f);
+      text-decoration: none;
+    }
+    &.mypager-prev, &.mypager-next{
+      padding: 5px 0px 0px 0px;
+    }
+    &.mypager-prev a, &.mypager-next a{
+      display: block;
+      overflow: hidden;
+      text-indent: 100%;
+      white-space: nowrap;
+      width: 14px;
+      height: 26px;
+      background: url('../image/pagearrows.png') no-repeat;
+      margin: 0 auto;
+    }
+    &.mypager-next a{
+      background-position: -14px 0px;
+    }
+  }
+}

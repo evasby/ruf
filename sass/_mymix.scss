@@ -141,13 +141,27 @@
     clear: both;
     height: 0;
   }
-  display: inline-block;
-  // start commented backslash hack
+  display: inline-table;
+  /* Прячем стили от IE для mac \*/
   @include old-ie{
     * html & { height: 1%; }
+    * zoom: 1;
   }
   display: block;
   // close commented backslash hack
+}
+@mixin def-clearfix3 {
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+  @include old-ie{
+    * zoom: 1;
+  }
 }
 //*********************************************************************************/
 @mixin def-box-shadow($top, $left, $blur, $color, $inset: false) {

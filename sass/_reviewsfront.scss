@@ -1,0 +1,33 @@
+.reviewsfront{
+  overflow: hidden;
+  &_item{
+    float: left;
+    width: 33.33%;
+    margin: 48px 0px 68px 0px;
+  }
+  &_wrap{
+    overflow: hidden;
+    margin: 0px 0px 32px 0px;
+  }
+  &_image{
+    float: left;
+    width: 66px;
+  }
+  &_name{
+    font-weight: bold;
+    color: #000000;
+    margin: 12px 0px 0px 74px;
+  }
+  &_job{
+    font-weight: bold;
+    color: #000000;
+    margin: 8px 0px 0px 74px;
+  }
+  &_text{
+    color: #000000;
+    padding: 0px 20px 0px 0px;
+  }
+  &_link{
+    @include link(#5d5d5d, #5d5d5d);
+  }
+}

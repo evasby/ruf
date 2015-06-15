@@ -1,33 +1,63 @@
 .reviews{
-  overflow: hidden;
+  padding: 15px 0px 0px 0px;
   &_item{
-    float: left;
-    width: 33.33%;
-    margin: 48px 0px 68px 0px;
+    margin: 0px 0px 71px 0px;
+  }
+  &_text{
+    margin: 0px 0px 27px 0px;
+    padding: 31px 30px 31px 30px;
+    border: 1px solid #cacaca;
+    line-height: 1.5;
+    @include def-border-radius(5px);
+    position: relative;
+    &:before, &:after {
+      content: ''; 
+      position: absolute;
+      left: 17px; 
+      bottom: -26px;
+      border: 13px solid transparent;
+      border-top: 13px solid #cacaca;
+    }
+    &:after {
+      border-top: 13px solid #FAF9F4;
+      bottom: -25px; 
+    }
   }
   &_wrap{
-    overflow: hidden;
-    margin: 0px 0px 32px 0px;
+    @include def-clearfix2();
   }
   &_image{
     float: left;
-    width: 66px;
+    @include def-clearfix2();
+    img{
+      display: block;
+      float: left;
+      width: 66px;
+    }
   }
   &_name{
+    margin: 12px 0px 6px 74px;
     font-weight: bold;
-    color: #000000;
-    margin: 12px 0px 0px 74px;
   }
   &_job{
+    margin: 0px 0px 0px 74px;
     font-weight: bold;
-    color: #000000;
-    margin: 8px 0px 0px 74px;
-  }
-  &_text{
-    color: #000000;
-    padding: 0px 20px 0px 0px;
+    line-height: 1.3;
   }
   &_link{
-    @include link(#5d5d5d, #5d5d5d);
+    float: right;
+    display: block;
+    margin: 15px 0px 0px 0px;
+    overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap;
+    width: 300px;
+    height: 47px;
+    background: url('../image/viewphoto.jpg') no-repeat;
+    @include def-opacity(0.85);
+    @include def-transition(opacity, 0.2s);
+    &:hover{
+      @include def-opacity(1);
+    }
   }
 }
