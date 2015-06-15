@@ -14,6 +14,7 @@ p{
   font-size: 14px;
   .rcontent & {
     line-height: 1.5;
+    margin-bottom: 25px;
   }
 }
 a{
@@ -93,4 +94,6 @@ textarea{
 @import "otheractions";
 
 @import "reviews";
+
+@import "work";
 
