@@ -1,0 +1,39 @@
+.brands{
+	padding: 35px 0px 10px 0px;
+	border-bottom: 1px solid #d9dad4;
+	&_title{
+		font-family: MyriadProBold;
+		font-size: 20px;
+		color: #f68a07;
+		text-transform: uppercase;
+		margin: 0px 0px 23px 0px;
+	}
+	&_item{
+		@include def-clearfix2();
+		margin: 0px 0px 50px 0px;
+	}
+	&_image{
+		width: 300px;
+		float: left;
+		img{
+			display: block;
+		}
+	}
+	&_info{
+		margin: 0px 0px 0px 320px;
+	}
+	&_head{
+		font-family: MyriadProBold;
+		font-size: 20px;
+		color: #f68a07;
+		height: 30px;
+	}
+	&_country{
+		font-family: MyriadProBold;
+		color: #cdcdcd;
+		height: 23px;
+	}
+	&_text{
+		height: 138px;
+	}
+}

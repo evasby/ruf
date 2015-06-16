@@ -1,9 +1,73 @@
 .catalog{
   &_row{
     @include def-clearfix2();
+    margin: 0px 0px 31px 0px;
   }
   &_item{
     float: left;
     width: 230px;
+    margin: 0px 0px 0px 26px;
+    &:first-child{
+    	margin: 0px 0px 0px 0px;
+    }
+    img{
+    	display: block;
+    	border-bottom: 3px solid #000000;
+    	margin: 0px 0px 16px 0px;
+    }
+  }
+  &_descr{
+  	margin: 0px 0px 40px 0px;
+  	p{
+  		line-height: 1.6;
+  	}
+  }
+  &_title{
+  	font-family: MyriadProBold;
+  	font-size: 20px;
+  	color: #f68a07;
+  	text-transform: uppercase;
+  	margin: 0px 0px 19px 0px;
+  }
+  &_link{
+  	text-decoration: none;
+  	font-size: 20px;
+  }
+  &_list{
+  	margin: 22px 0px 0px 0px;
+  }
+  &_listitem{
+  	margin: 0px 0px 12px 0px;
+  }
+  &_listlink{
+  	text-decoration: none;
+  	font-size: 16px;
+  	display: block;
+  	position: relative;
+  	padding: 0px 0px 0px 25px;
+  	&:before{
+      background: url("../image/square.gif") 0px 0px no-repeat;
+      content: "";
+      display: inline-block;
+      width: 7px;
+      height: 7px;
+      position: absolute;
+      left: 2px;
+      top: 5px;
+    }
+    @include old-ie{
+      *zoom: expression(
+        this.runtimeStyle.zoom="1",
+        this.appendChild( document.createElement("small") ).className="before"
+      );
+      .before{
+        background: url("../image/square.gif") 0px 0px no-repeat;
+        width: 7px;
+        height: 7px;     
+        position: absolute;
+        left: 2px;
+        top: 5px; 
+      }
+    }
   }
 }
