@@ -1,0 +1,76 @@
+.contacts{
+  p{
+    margin: 0px 0px 3px 0px;
+  }
+  &_title{
+    margin: 0px 0px 36px 0px;
+  }
+  &_head{
+    color: #72c325;
+    text-transform: uppercase;
+    margin: 0px 0px 8px 0px;
+  }
+  &_wrap{
+    @include def-clearfix2();
+    margin: 0px 0px 43px 0px;
+  }
+  &_item{
+    float: left;
+    width: 33.33%;
+    padding: 0px 0px 0px 30px;
+    position: relative;
+    &:before{
+      background: url("../image/contacts.png") 0px 0px no-repeat;
+      content: "";
+      display: inline-block;
+      width: 26px;
+      height: 25px;
+      position: absolute;
+      left: -3px;
+      top: -5px;
+    }
+    @include old-ie{
+      *zoom: expression(
+        this.runtimeStyle.zoom="1",
+        this.appendChild( document.createElement("small") ).className="before"
+      );
+      .before{
+        background: url("../image/contacts.png") 0px 0px no-repeat;
+        width: 26px;
+        height: 25px;     
+        position: absolute;
+        left: -3px;
+        top: -5px; 
+      }
+    }
+    &__phone{
+      width: 233px;
+    }
+    &__address{
+      width: 270px;
+      &:before{
+        background-position: -26px 0px;
+      }
+      @include old-ie{
+        .before{
+          background-position: -26px 0px;
+        }
+      }
+    }
+    &__email{
+      width: 120px;
+      &:before{
+        background-position: -52px 0px;
+      }
+      @include old-ie{
+        .before{
+          background-position: -52px 0px;
+        }
+      }
+    }
+  }
+  &_map{
+    height: 350px;
+    margin: 0px 0px 40px 0px;
+  }
+}

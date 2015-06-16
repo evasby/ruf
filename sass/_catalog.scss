@@ -1,0 +1,9 @@
+.catalog{
+  &_row{
+    @include def-clearfix2();
+  }
+  &_item{
+    float: left;
+    width: 230px;
+  }
+}
