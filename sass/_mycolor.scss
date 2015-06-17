@@ -1,0 +1,35 @@
+.mycolor{
+  @include def-clearfix2();
+  &_title{
+    font-family: MyriadProBold;
+    font-size: 20px;
+    color: #f68a07;
+    margin: 0px 0px 27px 0px;
+  }
+  &_item{
+    font-weight: bold;
+    position: relative;
+    width: 135px;
+    float: left;
+    display: block;
+    margin: 0px 10px 20px 0px;
+    &:nth-child(5n){
+      margin: 0px 0px 20px 0px;
+    }
+    @include link(#000000, #000000);
+    text-decoration: none;
+    img{
+      display: block;
+    }
+  }
+  &_descr{
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 24px;
+    padding: 10px 0px 0px 0px;
+    text-align: center;
+    background-color: #e9e9e9;
+  }
+}

@@ -1,0 +1,44 @@
+.mytables{
+  &_item{
+    margin: 0px 0px 43px 0px;
+  }
+  &_title{
+    font-family: MyriadProBold;
+    font-size: 20px;
+    color: #f68a07;
+    margin: 0px 0px 27px 0px;
+    text-transform: uppercase;
+  }
+  table { 
+    border-collapse: collapse; 
+    text-align: left; 
+    width: 100%; 
+  }
+  table td, table th { 
+    padding: 20px 14px; 
+  }
+  table thead th {
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #FFE4C4), color-stop(1, #FFE4C4) );
+    background:-moz-linear-gradient( center top, #FFE4C4 5%, #FFE4C4 100% );
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFE4C4', endColorstr='#FFE4C4');
+    background-color:#FFE4C4; 
+    color:#F68A07; 
+    font-size: 14px; 
+    font-weight: bold; 
+    border-left: 1px solid #FFCD92; 
+    text-transform: uppercase;
+  }
+  table thead th:first-child { 
+    border: none; 
+  }
+  table tbody td { 
+    color: #000000; 
+    font-size: 14px;
+    border-bottom: 1px solid #DBD9D0;
+    font-weight: normal; 
+  }
+  table tbody td:first-child { 
+    border-left: none;
+    font-weight: bold;
+  }
+}

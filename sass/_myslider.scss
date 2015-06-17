@@ -1,0 +1,116 @@
+.myslider{
+  @include def-clearfix2();
+  &_title{
+    font-family: MyriadProBold;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #f68a07;
+    margin: 0px 0px 27px 0px;
+  }
+  &_left{
+    width: 470px;
+    float: left;
+  }
+  &_right{
+    margin: 0px 0px 0px 500px;
+    padding: 17px 0px 0px 0px;
+    position: relative;
+  }
+  &_thumbs{
+    img{
+      display: block;
+    }
+    a{
+      position: relative;
+      display: block;
+      height: 110px;
+      &:after{
+        content: "";
+        display: block;
+        background-color: #000000;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        height: 110px;
+        width: 100%;
+        @include def-opacity(0.3);
+        @include def-transition(opacity, 0.2s);
+      }
+      @include old-ie{
+        *zoom: expression(
+          this.runtimeStyle.zoom="1",
+          this.appendChild( document.createElement("small") ).className="after"
+        );
+        .after{
+          background-color: #000000;
+          position: absolute;
+          left: 0px;
+          top: 0px;
+          height: 100%;
+          width: 100%;
+          @include def-opacity(0.3);
+          @include def-transition(opacity, 0.2s);
+        }
+        &:hover{
+          .after{
+            @include def-opacity(0);
+          }
+        }
+        &.active {
+          .after{
+            @include def-opacity(0);
+          }
+        }
+      }
+
+      &:hover{
+        &:after{
+          @include def-opacity(0);
+        }
+      }
+      &.active {
+        &:after{
+          @include def-opacity(0);
+        }
+      }
+    }
+  }
+  .bx-prev{
+    position: absolute;
+    top: -3px;
+    left: 99px;
+    display: block;
+    overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap;
+    width: 17px;
+    height: 11px;
+    background: url('../image/arrows.png') 0px 0px no-repeat;
+    &.disabled{
+      display: none;
+    }
+  }
+  .bx-next{
+    position: absolute;
+    bottom: -21px;
+    left: 99px;
+    display: block;
+    overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap;
+    width: 17px;
+    height: 11px;
+    background: url('../image/arrows.png') 0px -11px no-repeat;
+    &.disabled{
+      display: none;
+    }
+  }
+  /*&_shadow{
+    background-color: #ccc;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+  }*/
+}

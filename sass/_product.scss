@@ -1,0 +1,11 @@
+.product{
+  @include def-clearfix2();
+  margin: 0px 0px 34px 0px;
+  &_left{
+    width: 300px;
+    float: left;
+  }
+  &_text{
+    margin: 0px 0px 0px 320px;
+  }
+}
