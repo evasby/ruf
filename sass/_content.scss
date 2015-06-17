@@ -1,4 +1,8 @@
 .content{
   padding: 23px 0px 70px 0px;
   @include def-clearfix2();
+  &_top{
+  	@include def-clearfix2();
+  	height: 464px;
+  }
 }

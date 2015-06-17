@@ -161,6 +161,12 @@ textarea:focus {
   display: none;
 }
 
+.houses {
+  margin: 0px 0px 0px 263px;
+  position: relative;
+  z-index: 1;
+}
+
 .gradtitle {
   font-family: MyriadProBold;
   font-size: 20px;
@@ -704,6 +710,10 @@ textarea:focus {
   background-position: -48px 0px;
 }
 
+.topmenu {
+  position: relative;
+  z-index: 2;
+}
 .topmenu_link {
   font-size: 13px;
   color: #000000;
@@ -1012,6 +1022,24 @@ textarea:focus {
 * html .content {
   height: 1%;
 }
+.content_top {
+  display: inline-table;
+  /* ╨Я╤А╤П╤З╨╡╨╝ ╤Б╤В╨╕╨╗╨╕ ╨╛╤В IE ╨┤╨╗╤П mac \*/
+  * zoom: 1;
+  display: block;
+  height: 464px;
+}
+.content_top:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+* html .content_top {
+  height: 1%;
+}
 
 .lcontent {
   float: left;
@@ -1096,6 +1124,7 @@ textarea:focus {
 }
 
 .how {
+  float: left;
   border: 1px solid #f8af3b;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
