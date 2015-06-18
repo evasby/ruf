@@ -1,4 +1,4 @@
-.topmenu{
+.menutop{
   position: relative;
   z-index: 2;
   &_link{
@@ -10,7 +10,7 @@
     text-align: center;
     padding: 7px 0px 0px 0px;
     background-color: #f9f5e4;
-    @include def-transition(all, 0.1s);
+    //@include def-transition(all, 0.1s);
     &:hover{
       //background-color: #f8a43d;
     }
@@ -22,6 +22,9 @@
         @include link(#000000, #000000);
         @include def-h-gradient(#e9debd, #f9f5e4)
       }
+    }
+    &__active{
+      @include link(#fa7500, #fa7500);
     }
   }
   &_list{
@@ -58,14 +61,14 @@
     @include def-transition(all, 0.2s);
     &:first-child{
       @include def-border-radiuses(0px, 0px, 5px, 5px);
-      .topmenu_link{
+      .menutop_link{
         @include def-border-radiuses(0px, 0px, 5px, 5px);
       }
     }
     &:last-child{
       border-right: 1px solid #dadace;
       @include def-border-radiuses(5px, 5px, 0px, 0px);
-      .topmenu_link{
+      .menutop_link{
         @include def-border-radiuses(5px, 5px, 0px, 0px);
       }
     }
@@ -76,7 +79,7 @@
       & + li {
         border-left: 1px solid #e7ba7d;
       }
-      .topmenu_list__l2{
+      .menutop_list__l2{
         //display: block;
         border: 1px solid #e7ba7d;
       	border-top: none;
@@ -96,14 +99,14 @@
       &:first-child{
         border-left: none;
         @include def-border-radiuses(0px, 0px, 0px, 0px);
-        .topmenu_link{
+        .menutop_link{
           @include def-border-radiuses(0px, 0px, 0px, 0px);
         }
       }
       &:last-child{
         border-right: none;
         @include def-border-radiuses(0px, 0px, 0px, 0px);
-        .topmenu_link{
+        .menutop_link{
           @include def-border-radiuses(0px, 0px, 0px, 0px);
         }
       }

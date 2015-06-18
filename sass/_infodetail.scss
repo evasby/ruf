@@ -1,0 +1,11 @@
+.infodetail{
+  @include def-clearfix2();
+  padding: 15px 0px 0px 0px;
+  &_image{
+    float: left;
+    width: 300px;
+  }
+  &_descr{
+    margin: 0px 0px 0px 317px;
+  }
+}

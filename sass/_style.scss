@@ -63,17 +63,17 @@ textarea{
 @import "houses";
 
 @import "gradtitle";
-@import "breadcrumb";
+@import "mybreadcrumb";
 @import "mypager";
 
 @import "inner";
 @import "header";
 @import "plus";
 
-@import "topmenu";
+@import "menutop";
 @import "lmenu";
 
-@import "content";
+@import "mycontent";
 @import "lcontent";
 @import "rcontent";
 
@@ -103,6 +103,7 @@ textarea{
 @import "feedback";
 
 @import "info";
+@import "infodetail";
 
 @import "catalog";
 
