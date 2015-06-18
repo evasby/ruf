@@ -4,6 +4,7 @@
     @include def-clearfix2();
     display: inline-block;
     margin: 0 auto;
+    position: relative;
   }
   &_item{
     float: left;
@@ -35,6 +36,20 @@
     }
     &.mypager-next a{
       background-position: -14px 0px;
+    }
+  }
+  .ajax-progress{
+    position: absolute;
+    //top: 10px;
+    //left: -6px;
+    top: 11px;
+    left: -15px;
+    .throbber {
+      background: transparent url('../image/ajax-loader.gif') no-repeat 0px 0px; /* tweak this according to your gif */
+      float: left;
+      height: 15px; /* tweak this according to your gif */
+      width: 15px; /* tweak this according to your gif */
+      margin: 0px;
     }
   }
 }

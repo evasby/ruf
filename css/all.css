@@ -245,6 +245,7 @@ textarea:focus {
   display: block;
   display: inline-block;
   margin: 0 auto;
+  position: relative;
 }
 .mypager_list:after {
   visibility: hidden;
@@ -297,6 +298,21 @@ textarea:focus {
 }
 .mypager_item.mypager-next a {
   background-position: -14px 0px;
+}
+.mypager .ajax-progress {
+  position: absolute;
+  top: 11px;
+  left: -15px;
+}
+.mypager .ajax-progress .throbber {
+  background: transparent url("../image/ajax-loader.gif") no-repeat 0px 0px;
+  /* tweak this according to your gif */
+  float: left;
+  height: 15px;
+  /* tweak this according to your gif */
+  width: 15px;
+  /* tweak this according to your gif */
+  margin: 0px;
 }
 
 .inner {
