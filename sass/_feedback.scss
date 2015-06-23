@@ -1,5 +1,8 @@
 .feedback{
-  @iclude def-clearfix2();
+  @include def-clearfix2();
+  .messages{
+    display: none;
+  }
   &_item{
     float: left;
     border: 1px solid #d7d7d7;
@@ -69,6 +72,9 @@
       padding: 0px 15px 0px 15px;
       font-size: 16px;
       @include def-border-radius(2px);
+      &.error{
+        border: 1px solid #D7422C;
+      }
     }
     textarea{
       display: block;
@@ -81,10 +87,14 @@
       font-family: arial;
       font-size: 16px;
       @include def-border-radius(2px);
+      &.error{
+        border: 1px solid #D7422C;
+      }
     }
   }
   &_button{
     padding: 13px 0px 0px 0px;
+    position: relative;
     input{
       border: none;
       cursor: pointer;
@@ -108,6 +118,20 @@
         &:hover{
           background-color: #eb9225;
         }
+      }
+    }
+    .ajax-progress{
+      position: absolute;
+      //top: 10px;
+      //left: -6px;
+      top: 26px;
+      left: -20px;
+      .throbber {
+        background: transparent url('../image/ajax-loader.gif') no-repeat 0px 0px; /* tweak this according to your gif */
+        float: left;
+        height: 15px; /* tweak this according to your gif */
+        width: 15px; /* tweak this according to your gif */
+        margin: 0px;
       }
     }
   }

@@ -2,7 +2,7 @@
   width: 645px;
   overflow: hidden;
   float: left;
-  &_list{   
+  .lmenu_list{   
     -webkit-columns: 3;
     -moz-columns: 3;
     columns: 3;
@@ -10,10 +10,10 @@
     -moz-column-gap: 35px;  
     column-gap: 35px;
   }
-  &_item{
+  .lmenu_item{
     margin: 0px 0px 10px 0px;
   }
-  &_wrap{
+  .lmenu_wrap{
     width: 200px;
     float: left;
     margin-left: 22px;
@@ -21,7 +21,7 @@
       margin-left: 0px;
     }
   }
-  &_link{
+  .lmenu_link{
     @include link(#0c0c0c, #0c0c0c);
     text-decoration: none;
   }

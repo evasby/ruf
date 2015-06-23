@@ -1394,7 +1394,7 @@ textarea:focus {
   overflow: hidden;
   float: left;
 }
-.menucatalogbottom_list {
+.menucatalogbottom .lmenu_list {
   -webkit-columns: 3;
   -moz-columns: 3;
   columns: 3;
@@ -1402,31 +1402,31 @@ textarea:focus {
   -moz-column-gap: 35px;
   column-gap: 35px;
 }
-.menucatalogbottom_item {
+.menucatalogbottom .lmenu_item {
   margin: 0px 0px 10px 0px;
 }
-.menucatalogbottom_wrap {
+.menucatalogbottom .lmenu_wrap {
   width: 200px;
   float: left;
   margin-left: 22px;
 }
-.menucatalogbottom_wrap:first-child {
+.menucatalogbottom .lmenu_wrap:first-child {
   margin-left: 0px;
 }
-.menucatalogbottom_link {
+.menucatalogbottom .lmenu_link {
   color: #0c0c0c;
   text-decoration: none;
 }
-.menucatalogbottom_link:visited {
+.menucatalogbottom .lmenu_link:visited {
   color: #0c0c0c;
 }
-.menucatalogbottom_link:hover {
+.menucatalogbottom .lmenu_link:hover {
   color: #0c0c0c;
 }
-.menucatalogbottom_link:active {
+.menucatalogbottom .lmenu_link:active {
   color: #0c0c0c;
 }
-.menucatalogbottom_link:focus {
+.menucatalogbottom .lmenu_link:focus {
   color: #0c0c0c;
 }
 
@@ -1942,7 +1942,24 @@ textarea:focus {
 }
 
 .feedback {
-  @iclude def-clearfix2();
+  display: inline-table;
+  /* ╨Я╤А╤П╤З╨╡╨╝ ╤Б╤В╨╕╨╗╨╕ ╨╛╤В IE ╨┤╨╗╤П mac \*/
+  * zoom: 1;
+  display: block;
+}
+.feedback:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+* html .feedback {
+  height: 1%;
+}
+.feedback .messages {
+  display: none;
 }
 .feedback_item {
   float: left;
@@ -2008,6 +2025,9 @@ textarea:focus {
   -webkit-border-radius: 2px;
   border-radius: 2px;
 }
+.feedback_inner input.error {
+  border: 1px solid #D7422C;
+}
 .feedback_inner textarea {
   display: block;
   box-sizing: border-box;
@@ -2022,8 +2042,12 @@ textarea:focus {
   -webkit-border-radius: 2px;
   border-radius: 2px;
 }
+.feedback_inner textarea.error {
+  border: 1px solid #D7422C;
+}
 .feedback_button {
   padding: 13px 0px 0px 0px;
+  position: relative;
 }
 .feedback_button input {
   border: none;
@@ -2053,6 +2077,21 @@ textarea:focus {
 }
 .feedback_button__callback input:hover {
   background-color: #eb9225;
+}
+.feedback_button .ajax-progress {
+  position: absolute;
+  top: 26px;
+  left: -20px;
+}
+.feedback_button .ajax-progress .throbber {
+  background: transparent url("../image/ajax-loader.gif") no-repeat 0px 0px;
+  /* tweak this according to your gif */
+  float: left;
+  height: 15px;
+  /* tweak this according to your gif */
+  width: 15px;
+  /* tweak this according to your gif */
+  margin: 0px;
 }
 
 .info {
