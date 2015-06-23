@@ -2349,13 +2349,13 @@ textarea:focus {
 .otherproducts {
   padding: 30px 0px 60px 0px;
 }
-.otherproducts_wrap {
+.otherproducts-wrap {
   display: inline-table;
   /* ╨Я╤А╤П╤З╨╡╨╝ ╤Б╤В╨╕╨╗╨╕ ╨╛╤В IE ╨┤╨╗╤П mac \*/
   * zoom: 1;
   display: block;
 }
-.otherproducts_wrap:after {
+.otherproducts-wrap:after {
   visibility: hidden;
   display: block;
   font-size: 0;
@@ -2363,7 +2363,7 @@ textarea:focus {
   clear: both;
   height: 0;
 }
-* html .otherproducts_wrap {
+* html .otherproducts-wrap {
   height: 1%;
 }
 .otherproducts_item {

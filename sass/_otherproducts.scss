@@ -1,6 +1,6 @@
 .otherproducts{
   padding: 30px 0px 60px 0px;
-  &_wrap{
+  &-wrap{
     @include def-clearfix2();
   }
   &_item{
