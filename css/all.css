@@ -1085,6 +1085,7 @@ textarea:focus {
   text-align: center;
   padding: 7px 0px 0px 0px;
   background-color: #f9f5e4;
+  text-transform: uppercase;
 }
 .menutop_link:visited {
   color: #000000;
@@ -1099,8 +1100,8 @@ textarea:focus {
   color: #000000;
 }
 .menutop_link__l2 {
-  text-align: left;
-  padding: 7px 0px 0px 14px;
+  padding: 7px 0px 0px 0px;
+  text-transform: none;
 }
 .menutop_link__l2:hover {
   background-color: transparent;

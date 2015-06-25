@@ -10,13 +10,15 @@
     text-align: center;
     padding: 7px 0px 0px 0px;
     background-color: #f9f5e4;
+    text-transform: uppercase;
     //@include def-transition(all, 0.1s);
     &:hover{
       //background-color: #f8a43d;
     }
     &__l2{
-      text-align: left;
-      padding: 7px 0px 0px 14px;
+      //text-align: left;
+      padding: 7px 0px 0px 0px;
+      text-transform: none;
       &:hover{
         background-color: transparent;
         @include link(#000000, #000000);
