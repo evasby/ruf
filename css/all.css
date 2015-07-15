@@ -559,8 +559,8 @@ textarea:focus {
 
 #cboxClose {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 5px;
+  right: 5px;
   background: url(../image/cbox-close.png) no-repeat 0px 0px;
   width: 17px;
   height: 17px;
@@ -1081,9 +1081,9 @@ textarea:focus {
   color: #000000;
   text-decoration: none;
   display: block;
-  height: 20px;
+  height: 21px;
   text-align: center;
-  padding: 8px 0px 0px 0px;
+  padding: 7px 0px 0px 0px;
   background-color: #f9f5e4;
   text-transform: uppercase;
 }
