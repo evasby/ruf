@@ -118,6 +118,10 @@ p {
   margin-bottom: 25px;
 }
 
+b {
+  font-weight: bold;
+}
+
 a {
   color: #f69c39;
 }
@@ -3163,6 +3167,145 @@ textarea:focus {
 .orderaction_confirmation p {
   font-size: 20px;
   color: #444444;
+}
+
+.mycalc {
+  display: inline-table;
+  /* ╨Я╤А╤П╤З╨╡╨╝ ╤Б╤В╨╕╨╗╨╕ ╨╛╤В IE ╨┤╨╗╤П mac \*/
+  display: block;
+}
+.mycalc:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+.mycalc_item {
+  float: left;
+  margin: 0px 10px 0px 0px;
+}
+
+.datagrid table {
+  border-collapse: collapse;
+  text-align: left;
+  width: 100%;
+}
+
+.datagrid {
+  font: normal 12px/150% Arial, Helvetica, sans-serif;
+  background: #fff;
+  overflow: hidden;
+  border: 2px solid #000000;
+}
+
+.datagrid table td, .datagrid table th {
+  padding: 0px 10px;
+}
+
+.datagrid table thead th {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #F8A43D), color-stop(1, #F8A43D));
+  background: -moz-linear-gradient(center top, #F8A43D 5%, #F8A43D 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#F8A43D', endColorstr='#F8A43D');
+  background-color: #F8A43D;
+  color: #000000;
+  font-size: 11px;
+  font-weight: normal;
+  border-left: 1px solid #0070A8;
+}
+
+.datagrid table tfoot th {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #F8A43D), color-stop(1, #F8A43D));
+  background: -moz-linear-gradient(center top, #F8A43D 5%, #F8A43D 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#F8A43D', endColorstr='#F8A43D');
+  background-color: #F8A43D;
+  color: #000000;
+  font-size: 11px;
+  font-weight: normal;
+  border-left: 1px solid #0070A8;
+}
+
+.datagrid table thead th:first-child {
+  border: none;
+}
+
+.datagrid table tfoot th:first-child {
+  border: none;
+}
+
+.datagrid table tbody td {
+  color: #000000;
+  border-left: 1px solid #000000;
+  font-size: 11px;
+  border-bottom: 1px solid #000000;
+  font-weight: normal;
+}
+
+.datagrid table tbody .alt td {
+  background: #FFEDD6;
+  color: #000000;
+}
+
+.datagrid table tbody td:first-child {
+  border-left: none;
+}
+
+.datagrid table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.datagrid table tfoot td div {
+  border-top: 1px solid #000000;
+  background: #F8A43D;
+}
+
+.datagrid table tfoot td {
+  padding: 0;
+  font-size: 11px;
+}
+
+.datagrid table tfoot td div {
+  padding: 0px;
+}
+
+.mytable {
+  border: 2px solid #000000;
+  font: normal 11px Arial, Helvetica, sans-serif;
+  background: #fff;
+  overflow: hidden;
+}
+.mytable table {
+  border-collapse: collapse;
+  text-align: left;
+  width: 100%;
+}
+.mytable td, .mytable th {
+  padding: 5px 0px 5px 0px;
+  text-align: center;
+}
+.mytable td {
+  color: #000000;
+  border-left: 1px solid #000000;
+  font-size: 10px;
+  border-bottom: 1px solid #000000;
+  font-weight: normal;
+}
+.mytable td:first-child {
+  border-left: none;
+}
+.mytable_itogo {
+  background-color: #F8A43D;
+}
+.mytable_itogo td {
+  border-bottom: none;
+  border-top: 2px solid #000000;
+}
+.mytable_alt td {
+  background-color: #ffedd6;
+}
+.mytable_mont {
+  background-color: #ffe1bd;
 }
 
 /*# sourceMappingURL=all.css.map */

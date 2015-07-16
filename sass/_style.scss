@@ -17,6 +17,9 @@ p{
     margin-bottom: 25px;
   }
 }
+b{
+  font-weight: bold;
+}
 a{
   @include link(#f69c39, #f8a43d);
   &:focus{
@@ -130,4 +133,6 @@ textarea{
 @import "mytables";
 
 @import "orderaction";
+
+@import "mycalc";
 
