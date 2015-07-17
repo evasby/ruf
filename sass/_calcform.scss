@@ -1,0 +1,138 @@
+.calcform{
+  padding: 35px 0px 30px 0px;
+  border-bottom: 1px solid #d7dbd7;
+  @include def-clearfix2();
+  &_title{
+    color: #f68a07;
+    font-family: MyriadProBold;
+    font-size: 20px;
+    margin: 0 0 44px;
+    text-transform: uppercase;
+  }
+  &_left{
+    float: left;
+    width: 300px;
+  }
+  &_right{
+    margin: 0px 0px 0px 340px;
+  }
+  &_house{
+    height: 255px;
+    background: url('../image/calchouse.png') no-repeat;
+  }
+  &_pdf{
+    a{
+      margin: 0px 0px 25px 0px;
+      overflow: hidden;
+      text-indent: 100%;
+      white-space: nowrap;
+      display: block;
+      height: 47px;
+      width: 300px;
+      background: url('../image/pdf.jpg') no-repeat;
+      @include def-opacity(0.85);
+      @include def-transition(opacity, 0.2s);
+      &:hover{
+        @include def-opacity(1);
+      }
+    }
+  }
+  &_print{
+    a{
+      margin: 0px 0px 0px 0px;
+      overflow: hidden;
+      text-indent: 100%;
+      white-space: nowrap;
+      display: block;
+      height: 33px;
+      width: 110px;
+      background: url('../image/print.png') no-repeat;
+    }
+  }
+  &_calc{
+    a{
+      margin: 0px 0px 40px 0px;
+      overflow: hidden;
+      text-indent: 100%;
+      white-space: nowrap;
+      display: block;
+      height: 37px;
+      width: 158px;
+      background: url('../image/calc.jpg') no-repeat;
+      @include def-opacity(0.85);
+      @include def-transition(opacity, 0.2s);
+      &:hover{
+        @include def-opacity(1);
+      }
+    }
+  }
+  &_form{
+    border: 2px solid #f8a43d;
+    font: normal 11px Arial, Helvetica, sans-serif; 
+    overflow: hidden; 
+    margin: 0px 0px 17px 0px;
+    input{
+      width: 40px;
+    }
+    table{
+      border-collapse: collapse; 
+      text-align: left; 
+      width: 100%;
+    }
+    td, th{
+      padding: 3px 0px 3px 0px;
+      text-align: center;
+    }
+    td{
+      color: #000000; 
+      background: #feead2; 
+      border-left: 2px solid #f8a43d;
+      font-size: 12px;
+      font-weight: normal;
+      &:first-child{
+        border-left: none;
+        width: 30px;
+      }
+    }
+  }
+  &_kurs{
+    margin: 0px 0px 17px 0px;
+    width: 160px;
+    border: 1px solid #f8a43d;
+    font: normal 11px Arial, Helvetica, sans-serif; 
+    overflow: hidden; 
+    table{
+      border-collapse: collapse; 
+      text-align: left; 
+      width: 100%;
+    }
+    th{
+      padding: 3px 0px 3px 0px;
+      font-weight: bold;
+      text-align: center;
+      color: #000000; 
+      background: #ffefdb; 
+      border-bottom: 1px solid #f8a43d;
+      font-size: 12px;
+      &.alt{
+        background: #ffe8cb; 
+      }
+    }
+    td{
+      padding: 5px 0px 5px 0px;
+      text-align: center;
+      color: #000000; 
+      background: #ffefdb; 
+      font-size: 12px;
+      font-weight: normal;
+      &.alt{
+        background: #ffe8cb; 
+      }
+    }
+  }
+  &_alt{
+    td{
+      background-color: transparent;
+    }
+  }
+}

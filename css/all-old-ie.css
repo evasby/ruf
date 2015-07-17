@@ -3413,26 +3413,33 @@ textarea:focus {
   color: #444444;
 }
 
-.mycalc {
-  display: inline-table;
-  /* ╨Я╤А╤П╤З╨╡╨╝ ╤Б╤В╨╕╨╗╨╕ ╨╛╤В IE ╨┤╨╗╤П mac \*/
-  * zoom: 1;
+.mycalc_detail a {
+  margin: 0px 0px 40px 0px;
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
   display: block;
+  height: 47px;
+  width: 320px;
+  background: url("../image/detail.jpg") no-repeat;
+  -webkit-opacity: 0.85;
+  -moz-opacity: 0.85;
+  opacity: 0.85;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=85);
+  -webkit-transition: opacity 0.2s ease-in-out;
+  -moz-transition: opacity 0.2s ease-in-out;
+  -o-transition: opacity 0.2s ease-in-out;
+  -ms-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
 }
-.mycalc:after {
-  visibility: hidden;
-  display: block;
-  font-size: 0;
-  content: " ";
-  clear: both;
-  height: 0;
+.mycalc_detail a:hover {
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  opacity: 1;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
 }
-* html .mycalc {
-  height: 1%;
-}
-.mycalc_item {
-  float: left;
-  margin: 0px 10px 0px 0px;
+.mycalc_descr {
+  border-bottom: 1px solid #d7dbd7;
 }
 
 .datagrid table {
@@ -3517,7 +3524,175 @@ textarea:focus {
   padding: 0px;
 }
 
+.calcform {
+  padding: 35px 0px 30px 0px;
+  border-bottom: 1px solid #d7dbd7;
+  display: inline-table;
+  /* ╨Я╤А╤П╤З╨╡╨╝ ╤Б╤В╨╕╨╗╨╕ ╨╛╤В IE ╨┤╨╗╤П mac \*/
+  * zoom: 1;
+  display: block;
+}
+.calcform:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+* html .calcform {
+  height: 1%;
+}
+.calcform_title {
+  color: #f68a07;
+  font-family: MyriadProBold;
+  font-size: 20px;
+  margin: 0 0 44px;
+  text-transform: uppercase;
+}
+.calcform_left {
+  float: left;
+  width: 300px;
+}
+.calcform_right {
+  margin: 0px 0px 0px 340px;
+}
+.calcform_house {
+  height: 255px;
+  background: url("../image/calchouse.png") no-repeat;
+}
+.calcform_pdf a {
+  margin: 0px 0px 25px 0px;
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  display: block;
+  height: 47px;
+  width: 300px;
+  background: url("../image/pdf.jpg") no-repeat;
+  -webkit-opacity: 0.85;
+  -moz-opacity: 0.85;
+  opacity: 0.85;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=85);
+  -webkit-transition: opacity 0.2s ease-in-out;
+  -moz-transition: opacity 0.2s ease-in-out;
+  -o-transition: opacity 0.2s ease-in-out;
+  -ms-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+}
+.calcform_pdf a:hover {
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  opacity: 1;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+}
+.calcform_print a {
+  margin: 0px 0px 0px 0px;
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  display: block;
+  height: 33px;
+  width: 110px;
+  background: url("../image/print.png") no-repeat;
+}
+.calcform_calc a {
+  margin: 0px 0px 40px 0px;
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  display: block;
+  height: 37px;
+  width: 158px;
+  background: url("../image/calc.jpg") no-repeat;
+  -webkit-opacity: 0.85;
+  -moz-opacity: 0.85;
+  opacity: 0.85;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=85);
+  -webkit-transition: opacity 0.2s ease-in-out;
+  -moz-transition: opacity 0.2s ease-in-out;
+  -o-transition: opacity 0.2s ease-in-out;
+  -ms-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+}
+.calcform_calc a:hover {
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  opacity: 1;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+}
+.calcform_form {
+  border: 2px solid #f8a43d;
+  font: normal 11px Arial, Helvetica, sans-serif;
+  overflow: hidden;
+  margin: 0px 0px 17px 0px;
+}
+.calcform_form input {
+  width: 40px;
+}
+.calcform_form table {
+  border-collapse: collapse;
+  text-align: left;
+  width: 100%;
+}
+.calcform_form td, .calcform_form th {
+  padding: 3px 0px 3px 0px;
+  text-align: center;
+}
+.calcform_form td {
+  color: #000000;
+  background: #feead2;
+  border-left: 2px solid #f8a43d;
+  font-size: 12px;
+  font-weight: normal;
+}
+.calcform_form td:first-child {
+  border-left: none;
+  width: 30px;
+}
+.calcform_kurs {
+  margin: 0px 0px 17px 0px;
+  width: 160px;
+  border: 1px solid #f8a43d;
+  font: normal 11px Arial, Helvetica, sans-serif;
+  overflow: hidden;
+}
+.calcform_kurs table {
+  border-collapse: collapse;
+  text-align: left;
+  width: 100%;
+}
+.calcform_kurs th {
+  padding: 3px 0px 3px 0px;
+  font-weight: bold;
+  text-align: center;
+  color: #000000;
+  background: #ffefdb;
+  border-bottom: 1px solid #f8a43d;
+  font-size: 12px;
+}
+.calcform_kurs th.alt {
+  background: #ffe8cb;
+}
+.calcform_kurs td {
+  padding: 5px 0px 5px 0px;
+  text-align: center;
+  color: #000000;
+  background: #ffefdb;
+  font-size: 12px;
+  font-weight: normal;
+}
+.calcform_kurs td.alt {
+  background: #ffe8cb;
+}
+.calcform_alt td {
+  background-color: transparent;
+}
+
 .mytable {
+  padding: 45px 0px 0px 0px;
+}
+.mytable_item {
   border: 2px solid #000000;
   font: normal 11px Arial, Helvetica, sans-serif;
   background: #fff;
