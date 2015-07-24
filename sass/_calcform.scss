@@ -50,6 +50,7 @@
     }
   }
   &_calc{
+    position: relative;
     a{
       margin: 0px 0px 40px 0px;
       overflow: hidden;
@@ -63,6 +64,23 @@
       @include def-transition(opacity, 0.2s);
       &:hover{
         @include def-opacity(1);
+      }
+    }
+    input{
+      border: none;
+      display: block;
+      overflow: hidden;
+      text-indent: 9999px;
+      white-space: nowrap;
+      margin: 0px 0px 40px 0px;
+      height: 37px;
+      width: 158px;
+      background: url('../image/calc.jpg') no-repeat;
+      @include def-opacity(0.85);
+      @include def-transition(opacity, 0.2s);
+      &:hover{
+        @include def-opacity(1);
+        cursor: pointer;
       }
     }
   }
@@ -95,12 +113,17 @@
       }
     }
   }
+  &_currency{
+    @include def-clearfix2();
+    overflow: hidden;
+  }
   &_kurs{
     margin: 0px 0px 17px 0px;
     width: 160px;
     border: 1px solid #f8a43d;
     font: normal 11px Arial, Helvetica, sans-serif; 
     overflow: hidden; 
+    float: left;
     table{
       border-collapse: collapse; 
       text-align: left; 
@@ -130,9 +153,63 @@
       }
     }
   }
+  &_radio{
+    margin: 0px 0px 0px 160px;
+    padding: 17px 0px 0px 0px;
+    @include def-clearfix2();
+    label{
+      font-size: 12px;
+    }
+  }
   &_alt{
     td{
       background-color: transparent;
     }
+  }
+  input[type="radio"] {
+      position: absolute;
+      left: -9999px;
+  }
+
+  input[type="radio"] + label:before {
+      content: "";
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      @include def-border-radius(3px);
+      position: absolute;
+      top: -3px;
+      left: 0px;
+      //margin: 0px 4px 0px 0px;
+      background: url('../image/checkbox.png') no-repeat;
+      @include def-transition(box-shadow, 0.2s);
+  }
+  input[type="radio"] + label {
+      position: relative;
+      display: block;
+      float: left;
+      padding: 0px 0px 0px 23px;
+      margin: 0px 0px 0px 4px;
+      height: 20px;
+      &:hover{
+        cursor: pointer;
+        &:before{
+          -webkit-box-shadow: inset 0px 0px 5px 1px rgba(216,172,100,1);
+          -moz-box-shadow: inset 0px 0px 5px 1px rgba(216,172,100,1);
+          box-shadow: inset 0px 0px 5px 1px rgba(216,172,100,1);
+        }
+      }
+  }
+  input[type="radio"]:checked + label:before {
+      background-position: -20px 0px;
+  }
+  &_progress{
+    display: none;
+    position: absolute;
+    top: 10px;
+    left: 170px;
+    background: transparent url('../image/ajax-loader.gif') no-repeat 0px 0px; /* tweak this according to your gif */
+    height: 15px; /* tweak this according to your gif */
+    width: 15px; /* tweak this according to your gif */
   }
 }

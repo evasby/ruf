@@ -3348,6 +3348,9 @@ textarea:focus {
   width: 110px;
   background: url("../image/print.png") no-repeat;
 }
+.calcform_calc {
+  position: relative;
+}
 .calcform_calc a {
   margin: 0px 0px 40px 0px;
   overflow: hidden;
@@ -3372,6 +3375,33 @@ textarea:focus {
   -moz-opacity: 1;
   opacity: 1;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+}
+.calcform_calc input {
+  border: none;
+  display: block;
+  overflow: hidden;
+  text-indent: 9999px;
+  white-space: nowrap;
+  margin: 0px 0px 40px 0px;
+  height: 37px;
+  width: 158px;
+  background: url("../image/calc.jpg") no-repeat;
+  -webkit-opacity: 0.85;
+  -moz-opacity: 0.85;
+  opacity: 0.85;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=85);
+  -webkit-transition: opacity 0.2s ease-in-out;
+  -moz-transition: opacity 0.2s ease-in-out;
+  -o-transition: opacity 0.2s ease-in-out;
+  -ms-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+}
+.calcform_calc input:hover {
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  opacity: 1;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  cursor: pointer;
 }
 .calcform_form {
   border: 2px solid #f8a43d;
@@ -3402,12 +3432,27 @@ textarea:focus {
   border-left: none;
   width: 30px;
 }
+.calcform_currency {
+  display: inline-table;
+  /* ╨Я╤А╤П╤З╨╡╨╝ ╤Б╤В╨╕╨╗╨╕ ╨╛╤В IE ╨┤╨╗╤П mac \*/
+  display: block;
+  overflow: hidden;
+}
+.calcform_currency:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
 .calcform_kurs {
   margin: 0px 0px 17px 0px;
   width: 160px;
   border: 1px solid #f8a43d;
   font: normal 11px Arial, Helvetica, sans-serif;
   overflow: hidden;
+  float: left;
 }
 .calcform_kurs table {
   border-collapse: collapse;
@@ -3437,18 +3482,103 @@ textarea:focus {
 .calcform_kurs td.alt {
   background: #ffe8cb;
 }
+.calcform_radio {
+  margin: 0px 0px 0px 160px;
+  padding: 17px 0px 0px 0px;
+  display: inline-table;
+  /* ╨Я╤А╤П╤З╨╡╨╝ ╤Б╤В╨╕╨╗╨╕ ╨╛╤В IE ╨┤╨╗╤П mac \*/
+  display: block;
+}
+.calcform_radio:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+.calcform_radio label {
+  font-size: 12px;
+}
 .calcform_alt td {
   background-color: transparent;
+}
+.calcform input[type="radio"] {
+  position: absolute;
+  left: -9999px;
+}
+.calcform input[type="radio"] + label:before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  position: absolute;
+  top: -3px;
+  left: 0px;
+  background: url("../image/checkbox.png") no-repeat;
+  -webkit-transition: box-shadow 0.2s ease-in-out;
+  -moz-transition: box-shadow 0.2s ease-in-out;
+  -o-transition: box-shadow 0.2s ease-in-out;
+  -ms-transition: box-shadow 0.2s ease-in-out;
+  transition: box-shadow 0.2s ease-in-out;
+}
+.calcform input[type="radio"] + label {
+  position: relative;
+  display: block;
+  float: left;
+  padding: 0px 0px 0px 23px;
+  margin: 0px 0px 0px 4px;
+  height: 20px;
+}
+.calcform input[type="radio"] + label:hover {
+  cursor: pointer;
+}
+.calcform input[type="radio"] + label:hover:before {
+  -webkit-box-shadow: inset 0px 0px 5px 1px #d8ac64;
+  -moz-box-shadow: inset 0px 0px 5px 1px #d8ac64;
+  box-shadow: inset 0px 0px 5px 1px #d8ac64;
+}
+.calcform input[type="radio"]:checked + label:before {
+  background-position: -20px 0px;
+}
+.calcform_progress {
+  display: none;
+  position: absolute;
+  top: 10px;
+  left: 170px;
+  background: transparent url("../image/ajax-loader.gif") no-repeat 0px 0px;
+  /* tweak this according to your gif */
+  height: 15px;
+  /* tweak this according to your gif */
+  width: 15px;
+  /* tweak this according to your gif */
 }
 
 .mytable {
   padding: 45px 0px 0px 0px;
+}
+.mytable_title1 {
+  color: #f68a07;
+  font-family: MyriadProBold;
+  font-size: 20px;
+  margin: 0 0 20px;
+}
+.mytable_title2 {
+  float: right;
+  color: #f68a07;
+  font-family: MyriadProBold;
+  font-size: 20px;
+  margin: 0 40px 20px;
 }
 .mytable_item {
   border: 2px solid #000000;
   font: normal 11px Arial, Helvetica, sans-serif;
   background: #fff;
   overflow: hidden;
+  margin: 0px 0px 35px 0px;
 }
 .mytable table {
   border-collapse: collapse;
