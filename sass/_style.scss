@@ -61,6 +61,11 @@ textarea{
 .hide{
   display: none;
 }
+.page-node-23{
+  .messages.error{
+    display: none;
+  }
+}
 //**********************************************************/
 //**********************************************************/
 @import "houses";
@@ -139,4 +144,6 @@ textarea{
 @import "calcform";
 
 @import "mytable";
+
+@import "calcdetail";
 
