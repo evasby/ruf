@@ -21,6 +21,7 @@
     background: url('../image/calchouse.png') no-repeat;
   }
   &_pdf{
+    position: relative;
     a{
       margin: 0px 0px 25px 0px;
       overflow: hidden;
@@ -203,11 +204,20 @@
   input[type="radio"]:checked + label:before {
       background-position: -20px 0px;
   }
-  &_progress{
+  &_progress1{
     display: none;
     position: absolute;
     top: 10px;
     left: 170px;
+    background: transparent url('../image/ajax-loader.gif') no-repeat 0px 0px; /* tweak this according to your gif */
+    height: 15px; /* tweak this according to your gif */
+    width: 15px; /* tweak this according to your gif */
+  }
+  &_progress2{
+    display: none;
+    position: absolute;
+    bottom: 17px;
+    left: 313px;
     background: transparent url('../image/ajax-loader.gif') no-repeat 0px 0px; /* tweak this according to your gif */
     height: 15px; /* tweak this according to your gif */
     width: 15px; /* tweak this according to your gif */

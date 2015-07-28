@@ -3317,6 +3317,9 @@ textarea:focus {
   height: 255px;
   background: url("../image/calchouse.png") no-repeat;
 }
+.calcform_pdf {
+  position: relative;
+}
 .calcform_pdf a {
   margin: 0px 0px 25px 0px;
   overflow: hidden;
@@ -3548,11 +3551,23 @@ textarea:focus {
 .calcform input[type="radio"]:checked + label:before {
   background-position: -20px 0px;
 }
-.calcform_progress {
+.calcform_progress1 {
   display: none;
   position: absolute;
   top: 10px;
   left: 170px;
+  background: transparent url("../image/ajax-loader.gif") no-repeat 0px 0px;
+  /* tweak this according to your gif */
+  height: 15px;
+  /* tweak this according to your gif */
+  width: 15px;
+  /* tweak this according to your gif */
+}
+.calcform_progress2 {
+  display: none;
+  position: absolute;
+  bottom: 17px;
+  left: 313px;
   background: transparent url("../image/ajax-loader.gif") no-repeat 0px 0px;
   /* tweak this according to your gif */
   height: 15px;
