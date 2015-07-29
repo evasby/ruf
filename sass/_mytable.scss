@@ -1,5 +1,19 @@
 .mytable{
   padding: 45px 0px 0px 0px;
+  &__print{
+    width: 715px;
+    margin: 0 auto;
+    padding: 0px;
+    .mytable_title1{
+      margin: 0 0 10px;
+    }
+    .mytable_title2{
+      margin: 0 40px 10px;
+    }
+    .mytable_item{
+      margin: 0px 0px 10px 0px;
+    }
+  }
   &_title1{
     color: #f68a07;
     font-family: MyriadProBold;

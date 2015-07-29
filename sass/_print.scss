@@ -1,0 +1,42 @@
+.print{
+  margin: 0px 0px 10px 0px;
+  &_wrap{
+    @include def-clearfix2();
+    margin: 0px 0px 7px 0px;
+  }
+  &_buttons{
+    margin: 15px 0px 5px 0px;
+    text-align:center;
+  }
+  &_left{
+    width: 168px;
+    float: left;
+  }
+  &_right{
+    margin: 0px 0px 0px 180px;
+  }
+  &_logo{
+    display: block;
+    width: 168px;
+    height: 116px;
+    margin: 0px 0px 0px 0px;
+  }
+  &_title{
+    font-size: 20px;
+    text-align: right;
+    margin: 0px 0px 10px 0px;
+    padding: 23px 0px 0px 0px;
+  }
+  &_info{
+    p{
+      text-align: right;
+    }
+  }
+  &_info2{
+    border-top: 1px solid #000000;
+    padding: 7px 0px 0px 0px;
+    p{
+      text-align: right;
+    }
+  }
+}

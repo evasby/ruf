@@ -3835,6 +3835,20 @@ textarea:focus {
 .mytable {
   padding: 45px 0px 0px 0px;
 }
+.mytable__print {
+  width: 715px;
+  margin: 0 auto;
+  padding: 0px;
+}
+.mytable__print .mytable_title1 {
+  margin: 0 0 10px;
+}
+.mytable__print .mytable_title2 {
+  margin: 0 40px 10px;
+}
+.mytable__print .mytable_item {
+  margin: 0px 0px 10px 0px;
+}
 .mytable_title1 {
   color: #f68a07;
   font-family: MyriadProBold;
@@ -4072,6 +4086,61 @@ textarea:focus {
   width: 15px;
   /* tweak this according to your gif */
   margin: 0px;
+}
+
+.print {
+  margin: 0px 0px 10px 0px;
+}
+.print_wrap {
+  display: inline-table;
+  /* ╨Я╤А╤П╤З╨╡╨╝ ╤Б╤В╨╕╨╗╨╕ ╨╛╤В IE ╨┤╨╗╤П mac \*/
+  * zoom: 1;
+  display: block;
+  margin: 0px 0px 7px 0px;
+}
+.print_wrap:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+* html .print_wrap {
+  height: 1%;
+}
+.print_buttons {
+  margin: 15px 0px 5px 0px;
+  text-align: center;
+}
+.print_left {
+  width: 168px;
+  float: left;
+}
+.print_right {
+  margin: 0px 0px 0px 180px;
+}
+.print_logo {
+  display: block;
+  width: 168px;
+  height: 116px;
+  margin: 0px 0px 0px 0px;
+}
+.print_title {
+  font-size: 20px;
+  text-align: right;
+  margin: 0px 0px 10px 0px;
+  padding: 23px 0px 0px 0px;
+}
+.print_info p {
+  text-align: right;
+}
+.print_info2 {
+  border-top: 1px solid #000000;
+  padding: 7px 0px 0px 0px;
+}
+.print_info2 p {
+  text-align: right;
 }
 
 /*# sourceMappingURL=all-old-ie.css.map */
