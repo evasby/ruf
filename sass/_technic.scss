@@ -1,6 +1,10 @@
 .technic{
   overflow: hidden;
   margin: 0px 0px 31px 0px;
+  p{
+    margin: 0px;
+    line-height: 1;
+  }
   &_title{
     font-family: MyriadProBold;
     font-size: 20px;
@@ -14,6 +18,9 @@
   }
   table td, table th { 
     padding: 20px 14px; 
+  }
+  table thead tr{
+    margin: 10px 0px 0px 0px;
   }
   table thead th {
     background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #FFE4C4), color-stop(1, #FFE4C4) );

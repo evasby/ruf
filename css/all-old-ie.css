@@ -2384,6 +2384,9 @@ textarea:focus {
   border-top: 13px solid #FAF9F4;
   bottom: -25px;
 }
+.reviews_text p {
+  margin: 0px;
+}
 .reviews_wrap {
   display: inline-table;
   /* ╨Я╤А╤П╤З╨╡╨╝ ╤Б╤В╨╕╨╗╨╕ ╨╛╤В IE ╨┤╨╗╤П mac \*/
@@ -3293,6 +3296,10 @@ textarea:focus {
   overflow: hidden;
   margin: 0px 0px 31px 0px;
 }
+.technic p {
+  margin: 0px;
+  line-height: 1;
+}
 .technic_title {
   font-family: MyriadProBold;
   font-size: 20px;
@@ -3306,6 +3313,9 @@ textarea:focus {
 }
 .technic table td, .technic table th {
   padding: 20px 14px;
+}
+.technic table thead tr {
+  margin: 10px 0px 0px 0px;
 }
 .technic table thead th {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #FFE4C4), color-stop(1, #FFE4C4));
@@ -3813,9 +3823,10 @@ textarea:focus {
   text-indent: 9999px;
   white-space: nowrap;
   margin: 0px 0px 40px 0px;
-  height: 37px;
-  width: 158px;
+  height: 39px;
+  width: 162px;
   background: url("../image/calc.jpg") no-repeat;
+  background-size: 100% 100%;
   -webkit-opacity: 0.85;
   -moz-opacity: 0.85;
   opacity: 0.85;
@@ -3968,7 +3979,7 @@ textarea:focus {
   display: block;
   float: left;
   padding: 0px 0px 0px 23px;
-  margin: 0px 0px 0px 4px;
+  margin: 0px 0px 0px 18px;
   height: 20px;
 }
 .calcform input[type="radio"] + label:hover {

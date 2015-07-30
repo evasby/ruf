@@ -22,6 +22,9 @@
       border-top: 13px solid #FAF9F4;
       bottom: -25px; 
     }
+    p{
+      margin: 0px;
+    }
   }
   &_wrap{
     @include def-clearfix2();
