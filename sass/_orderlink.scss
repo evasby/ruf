@@ -5,10 +5,15 @@
 	white-space: nowrap;
 	overflow: hidden;
 	height: 95px;
+	width: 255px;
 	background: url('../image/order.jpg') no-repeat;
 	@include def-transition(opacity, 0.2s);
 	@include def-opacity(0.85);
 	&:hover{
 		@include def-opacity(1);
+	}
+	&__fixed{
+		position: fixed;
+		top: 25px;
 	}
 }
