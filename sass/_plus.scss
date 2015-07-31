@@ -1,11 +1,14 @@
 .plus{
 	margin: 30px 0px 0px 0px;
 	&_item{
-		font-family: MyriadProRegular;
-		font-size: 13px;
+    font-family: MyriadProRegular;
+		//font-family: Helvetica;
+		font-size: 14px;
+    line-height: 1;
 		position: relative;
 		margin: 10px 0px 0px 0px;
 		padding: 0px 0px 0px 22px;
+    height: 14px;
 		&:before{
       background: url("../image/plus.png") 0px 0px no-repeat;
       content: "";
@@ -199,6 +202,10 @@
       animation-timing-function: ease-in-out;*/
     }
 	}
+  /*@-moz-document url-prefix()
+  {
+    body { background: grey; color: white }
+  }*/
 }
 /*@keyframes show {
   from {

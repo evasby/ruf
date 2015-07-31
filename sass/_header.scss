@@ -3,6 +3,7 @@
   height: 398px;
   position: relative;
   background: url('../image/header.png') center bottom no-repeat;
+  min-width: 1000px;
   &_edge{
     position: absolute;
     left: 0px;
@@ -10,6 +11,7 @@
     height: 27px;
     width: 100%;
     background: url('../image/edging-top.png') repeat-x;
+    //min-width: 1000px;
   }
   &_left{
     float: left;
