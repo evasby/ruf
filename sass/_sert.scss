@@ -1,0 +1,11 @@
+.sert{
+  @include def-clearfix2();
+  &_link{
+    display: block;
+    float: left;
+    margin: 0px 30px 30px 0px;
+    &:nth-child(4n){
+      margin: 0px 0px 30px 0px;
+    }
+  }
+}

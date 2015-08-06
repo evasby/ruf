@@ -1,4 +1,12 @@
 .rcontent{
   margin: 0px 0px 0px 285px;
   overflow: hidden;
+  ul{
+  padding-left: 15px;
+  list-style: disc outside;
+  }
+  ol{
+    padding-left: 15px;
+    list-style: decimal outside;
+  }
 }

@@ -118,7 +118,7 @@ p {
   margin-bottom: 25px;
 }
 
-b {
+strong, b {
   font-weight: bold;
 }
 
@@ -1542,7 +1542,7 @@ textarea:focus {
   color: #0c0c0c;
 }
 .lmenu_link:hover {
-  color: #0c0c0c;
+  color: #f68a07;
 }
 .lmenu_link:active {
   color: #0c0c0c;
@@ -1589,6 +1589,14 @@ textarea:focus {
 .rcontent {
   margin: 0px 0px 0px 285px;
   overflow: hidden;
+}
+.rcontent ul {
+  padding-left: 15px;
+  list-style: disc outside;
+}
+.rcontent ol {
+  padding-left: 15px;
+  list-style: decimal outside;
 }
 
 .orderlink {
@@ -2886,8 +2894,8 @@ textarea:focus {
   color: #cdcdcd;
   height: 23px;
 }
-.brands_text {
-  height: 138px;
+.brands_text p {
+  margin: 0px 0px 8px 0px;
 }
 
 .otherproducts {
@@ -3166,8 +3174,8 @@ textarea:focus {
   left: 0px;
   bottom: 0px;
   width: 100%;
-  height: 24px;
-  padding: 10px 0px 0px 0px;
+  height: 35px;
+  padding: 5px 0px 0px 0px;
   text-align: center;
   background-color: #e9e9e9;
 }
@@ -4071,6 +4079,28 @@ textarea:focus {
 }
 .print_info2 p {
   text-align: right;
+}
+
+.sert {
+  display: inline-table;
+  /* ╨Я╤А╤П╤З╨╡╨╝ ╤Б╤В╨╕╨╗╨╕ ╨╛╤В IE ╨┤╨╗╤П mac \*/
+  display: block;
+}
+.sert:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+.sert_link {
+  display: block;
+  float: left;
+  margin: 0px 30px 30px 0px;
+}
+.sert_link:nth-child(4n) {
+  margin: 0px 0px 30px 0px;
 }
 
 /*# sourceMappingURL=all.css.map */
