@@ -1673,6 +1673,9 @@ textarea:focus {
   padding-left: 15px;
   list-style: decimal outside;
 }
+.rcontent li {
+  line-height: 1.6;
+}
 
 .orderlink {
   display: block;
@@ -1837,7 +1840,7 @@ textarea:focus {
   background: url("../image/arrows-block.png") -11px 0px no-repeat;
   position: absolute;
   top: 27px;
-  right: 110px;
+  right: 23px;
 }
 
 .how {
@@ -2978,6 +2981,13 @@ textarea:focus {
 * html .category {
   height: 1%;
 }
+.category_cost {
+  height: 28px;
+}
+.category_cost span {
+  color: #f68a07;
+  font-size: 18px;
+}
 .category_left {
   width: 300px;
   float: left;
@@ -3081,7 +3091,7 @@ textarea:focus {
   font-family: MyriadProBold;
   font-size: 20px;
   color: #f68a07;
-  height: 30px;
+  min-height: 30px;
 }
 .brands_country {
   font-family: MyriadProBold;
@@ -3090,6 +3100,13 @@ textarea:focus {
 }
 .brands_text p {
   margin: 0px 0px 8px 0px;
+}
+.brands_price {
+  height: 28px;
+}
+.brands_price span {
+  color: #f68a07;
+  font-size: 18px;
 }
 
 .otherproducts {
@@ -3165,6 +3182,10 @@ textarea:focus {
 * html .myslider {
   height: 1%;
 }
+.myslider_wrap {
+  border: 1px solid #e9e9e9;
+  padding: 15px 0px 15px 0px;
+}
 .myslider_title {
   font-family: MyriadProBold;
   font-size: 20px;
@@ -3176,10 +3197,101 @@ textarea:focus {
   width: 470px;
   float: left;
 }
+.myslider_top {
+  margin: 0px 0px 0px 16px;
+  position: relative;
+}
+.myslider_top .bx-prev {
+  position: absolute;
+  top: 176px;
+  left: 10px;
+  display: block;
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  width: 30px;
+  height: 48px;
+  background: url("../image/newarrows2.png") 0px 0px no-repeat;
+  -webkit-opacity: 0.7;
+  -moz-opacity: 0.7;
+  opacity: 0.7;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+}
+.myslider_top .bx-prev.disabled {
+  display: none;
+}
+.myslider_top .bx-prev:hover {
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  opacity: 1;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+}
+.myslider_top .bx-next {
+  position: absolute;
+  top: 176px;
+  right: 25px;
+  display: block;
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  width: 30px;
+  height: 48px;
+  background: url("../image/newarrows2.png") -30px 0px no-repeat;
+  -webkit-opacity: 0.7;
+  -moz-opacity: 0.7;
+  opacity: 0.7;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+}
+.myslider_top .bx-next.disabled {
+  display: none;
+}
+.myslider_top .bx-next:hover {
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  opacity: 1;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+}
 .myslider_right {
   margin: 0px 0px 0px 500px;
   padding: 17px 0px 0px 0px;
   position: relative;
+}
+.myslider_bottom {
+  position: relative;
+}
+.myslider_bottom .bx-prev {
+  position: absolute;
+  top: 26px;
+  left: 21px;
+  display: block;
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  width: 11px;
+  height: 17px;
+  background: url("../image/arrows.png") 0px 0px no-repeat;
+}
+.myslider_bottom .bx-prev.disabled {
+  display: none;
+}
+.myslider_bottom .bx-next {
+  position: absolute;
+  top: 26px;
+  right: 21px;
+  display: block;
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  width: 11px;
+  height: 17px;
+  background: url("../image/arrows.png") -11px 0px no-repeat;
+}
+.myslider_bottom .bx-next.disabled {
+  display: none;
+}
+.myslider_thumbs {
+  list-style: none !important;
+  padding: 0 !important;
 }
 .myslider_thumbs img {
   display: block;
@@ -3187,7 +3299,8 @@ textarea:focus {
 .myslider_thumbs a {
   position: relative;
   display: block;
-  height: 110px;
+  height: 71px;
+  width: 120px;
   *zoom: expression( this.runtimeStyle.zoom="1", this.appendChild( document.createElement("small") ).className="after" );
 }
 .myslider_thumbs a:after {
@@ -3197,12 +3310,12 @@ textarea:focus {
   position: absolute;
   left: 0px;
   top: 0px;
-  height: 110px;
-  width: 100%;
-  -webkit-opacity: 0.3;
-  -moz-opacity: 0.3;
-  opacity: 0.3;
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=30);
+  height: 71px;
+  width: 120px;
+  -webkit-opacity: 0.5;
+  -moz-opacity: 0.5;
+  opacity: 0.5;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
   -webkit-transition: opacity 0.2s ease-in-out;
   -moz-transition: opacity 0.2s ease-in-out;
   -o-transition: opacity 0.2s ease-in-out;
@@ -3216,10 +3329,10 @@ textarea:focus {
   top: 0px;
   height: 100%;
   width: 100%;
-  -webkit-opacity: 0.3;
-  -moz-opacity: 0.3;
-  opacity: 0.3;
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=30);
+  -webkit-opacity: 0.5;
+  -moz-opacity: 0.5;
+  opacity: 0.5;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
   -webkit-transition: opacity 0.2s ease-in-out;
   -moz-transition: opacity 0.2s ease-in-out;
   -o-transition: opacity 0.2s ease-in-out;
@@ -3250,35 +3363,8 @@ textarea:focus {
   opacity: 0;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
 }
-.myslider .bx-prev {
-  position: absolute;
-  top: -3px;
-  left: 99px;
-  display: block;
-  overflow: hidden;
-  text-indent: 100%;
-  white-space: nowrap;
-  width: 17px;
-  height: 11px;
-  background: url("../image/arrows.png") 0px 0px no-repeat;
-}
-.myslider .bx-prev.disabled {
-  display: none;
-}
-.myslider .bx-next {
-  position: absolute;
-  bottom: -21px;
-  left: 99px;
-  display: block;
-  overflow: hidden;
-  text-indent: 100%;
-  white-space: nowrap;
-  width: 17px;
-  height: 11px;
-  background: url("../image/arrows.png") 0px -11px no-repeat;
-}
-.myslider .bx-next.disabled {
-  display: none;
+.myslider_titem {
+  width: 120px;
 }
 
 .product {
@@ -3343,6 +3429,11 @@ textarea:focus {
   font-weight: bold;
   border-left: 1px solid #FFCD92;
   text-transform: uppercase;
+}
+.technic table thead th p {
+  font-size: 14px;
+  font-weight: bold;
+  color: #F68A07;
 }
 .technic table thead th:first-child {
   border: none;

@@ -26,7 +26,7 @@
 		font-family: MyriadProBold;
 		font-size: 20px;
 		color: #f68a07;
-		height: 30px;
+		min-height: 30px;
 	}
 	&_country{
 		font-family: MyriadProBold;
@@ -39,4 +39,11 @@
 			margin: 0px 0px 8px 0px;
 		}
 	}
+  &_price{
+    height: 28px;
+    span{
+      color: #f68a07;
+      font-size: 18px;
+    }
+  }
 }
