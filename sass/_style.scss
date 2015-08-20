@@ -20,6 +20,9 @@ p{
 strong, b{
   font-weight: bold;
 }
+em, i{
+  font-style: italic;
+}
 a{
   @include link(#f69c39, #f8a43d);
   &:focus{

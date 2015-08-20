@@ -122,6 +122,10 @@ strong, b {
   font-weight: bold;
 }
 
+em, i {
+  font-style: italic;
+}
+
 a {
   color: #f69c39;
 }
