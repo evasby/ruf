@@ -1,6 +1,8 @@
 .brands{
 	padding: 35px 0px 10px 0px;
-	border-bottom: 1px solid #d9dad4;
+	&_wrap{
+		border-bottom: 1px solid #d9dad4;
+	}
 	&_title{
 		font-family: MyriadProBold;
 		font-size: 20px;
