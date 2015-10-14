@@ -17,5 +17,8 @@
   &_link{
     @include link(#0c0c0c, #f68a07);
     text-decoration: none;
+    &__active{
+      @include link(#f68a07, #f68a07);
+    }
   }
 }
