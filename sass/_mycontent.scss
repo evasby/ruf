@@ -1,5 +1,7 @@
 .mycontent{
   padding: 23px 0px 70px 0px;
+  //height: 1500px;
+  position: relative;
   @include def-clearfix2();
   &_top{
   	@include def-clearfix2();

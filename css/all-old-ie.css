@@ -101,6 +101,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   font-style: normal;
   font-weight: normal;
 }
+html, body {
+  min-height: 100%;
+}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
   color: #0c0c0c;
@@ -290,7 +294,7 @@ textarea:focus {
   color: #f68a07;
 }
 .houses_item:hover .houses_link:hover {
-  color: #f68a07;
+  color: #444444;
 }
 .houses_item:hover .houses_link:active {
   color: #f68a07;
@@ -1639,6 +1643,7 @@ textarea:focus {
 
 .mycontent {
   padding: 23px 0px 70px 0px;
+  position: relative;
   display: inline-table;
   /* ╨Я╤А╤П╤З╨╡╨╝ ╤Б╤В╨╕╨╗╨╕ ╨╛╤В IE ╨┤╨╗╤П mac \*/
   * zoom: 1;
@@ -1677,7 +1682,6 @@ textarea:focus {
 .lcontent {
   float: left;
   width: 255px;
-  position: relative;
 }
 
 .rcontent {
@@ -1725,6 +1729,11 @@ textarea:focus {
   position: fixed;
   top: 25px;
 }
+.orderlink__fixedbottom {
+  position: absolute;
+  top: auto;
+  bottom: 330px;
+}
 
 .reviewsblock {
   -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
@@ -1736,6 +1745,12 @@ textarea:focus {
 .reviewsblock__fixed {
   position: fixed;
   top: 150px;
+}
+.reviewsblock__fixedbottom {
+  position: absolute;
+  top: auto;
+  left: 0px;
+  bottom: 50px;
 }
 .reviewsblock_title {
   font-family: MyriadProBold;
@@ -2401,7 +2416,7 @@ textarea:focus {
   margin: 0px 0px 71px 0px;
 }
 .reviews_text {
-  margin: 0px 0px 27px 0px;
+  margin: 27px 0px 0px 0px;
   padding: 31px 30px 31px 30px;
   border: 1px solid #cacaca;
   line-height: 1.5;
@@ -2414,13 +2429,13 @@ textarea:focus {
   content: '';
   position: absolute;
   left: 17px;
-  bottom: -26px;
+  top: -26px;
   border: 13px solid transparent;
-  border-top: 13px solid #cacaca;
+  border-bottom: 13px solid #cacaca;
 }
 .reviews_text:after {
-  border-top: 13px solid #FAF9F4;
-  bottom: -25px;
+  border-bottom: 13px solid #FAF9F4;
+  top: -25px;
 }
 .reviews_text p {
   margin: 0px;
@@ -3113,11 +3128,25 @@ textarea:focus {
   font-family: MyriadProBold;
   font-size: 20px;
   color: #f68a07;
+  display: block;
+  text-decoration: none;
   min-height: 30px;
+}
+.brands_head:visited {
+  color: #f68a07;
+}
+.brands_head:hover {
+  color: #f8a43d;
+}
+.brands_head:active {
+  color: #f68a07;
+}
+.brands_head:focus {
+  color: #f68a07;
 }
 .brands_country {
   font-family: MyriadProBold;
-  color: #cdcdcd;
+  color: #f69c39;
   height: 23px;
 }
 .brands_text p {
@@ -4492,6 +4521,10 @@ textarea:focus {
   font-size: 20px;
   color: #f68a07;
   margin: 0px 0px 15px 0px;
+}
+
+.mysticky {
+  height: 380px;
 }
 
 /*# sourceMappingURL=all-old-ie.css.map */

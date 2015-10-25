@@ -8,6 +8,12 @@
     position: fixed;
     top: 150px;
   }
+  &__fixedbottom{
+    position: absolute;
+    top: auto;
+    left: 0px;
+    bottom: 50px;
+  }
   &_title{
   	font-family: MyriadProBold;
   	font-size: 20px;

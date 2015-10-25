@@ -27,12 +27,14 @@
 	&_head{
 		font-family: MyriadProBold;
 		font-size: 20px;
-		color: #f68a07;
+		@include link(#f68a07, #f8a43d);
+		display: block;
+		text-decoration: none;
 		min-height: 30px;
 	}
 	&_country{
 		font-family: MyriadProBold;
-		color: #cdcdcd;
+		color: #f69c39;
 		height: 23px;
 	}
 	&_text{

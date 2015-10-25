@@ -102,7 +102,7 @@
 		font-weight: bold;
 		@include def-transition(color, 0.2s);
 		.houses_item:hover &{
-			@include link(#f68a07, #f68a07);
+			@include link(#f68a07, #444444);
 			text-decoration: none;
 		}
 		&__l2{

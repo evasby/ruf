@@ -4,7 +4,7 @@
     margin: 0px 0px 71px 0px;
   }
   &_text{
-    margin: 0px 0px 27px 0px;
+    margin: 27px 0px 0px 0px;
     padding: 31px 30px 31px 30px;
     border: 1px solid #cacaca;
     line-height: 1.5;
@@ -14,13 +14,13 @@
       content: ''; 
       position: absolute;
       left: 17px; 
-      bottom: -26px;
+      top: -26px;
       border: 13px solid transparent;
-      border-top: 13px solid #cacaca;
+      border-bottom: 13px solid #cacaca;
     }
     &:after {
-      border-top: 13px solid #FAF9F4;
-      bottom: -25px; 
+      border-bottom: 13px solid #FAF9F4;
+      top: -25px; 
     }
     p{
       margin: 0px;

@@ -16,4 +16,9 @@
 		position: fixed;
 		top: 25px;
 	}
+	&__fixedbottom{
+		position: absolute;
+		top: auto;
+		bottom: 330px;
+	}
 }
