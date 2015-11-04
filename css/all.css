@@ -1270,7 +1270,7 @@ textarea:focus {
   display: block;
   height: 21px;
   text-align: center;
-  padding: 7px 0px 0px 0px;
+  padding: 7px 10px 0px 10px;
   background-color: #f9f5e4;
   text-transform: uppercase;
 }
@@ -2025,9 +2025,9 @@ textarea:focus {
   -webkit-columns: 3;
   -moz-columns: 3;
   columns: 3;
-  -webkit-column-gap: 35px;
-  -moz-column-gap: 35px;
-  column-gap: 35px;
+  -webkit-column-gap: 34px;
+  -moz-column-gap: 34px;
+  column-gap: 34px;
 }
 .menucatalogbottom .lmenu_item {
   margin: 0px 0px 10px 0px;
@@ -2055,6 +2055,10 @@ textarea:focus {
 }
 .menucatalogbottom .lmenu_link:focus {
   color: #0c0c0c;
+}
+.menucatalogbottom_wrap {
+  width: 210px;
+  float: left;
 }
 
 .social {
