@@ -3267,7 +3267,7 @@ textarea:focus {
   white-space: nowrap;
   width: 30px;
   height: 48px;
-  background: url("../image/newarrows2.png") 0px 0px no-repeat;
+  background: url("../image/newarrows3.png") 0px 0px no-repeat;
   -webkit-opacity: 0.7;
   -moz-opacity: 0.7;
   opacity: 0.7;
@@ -3292,7 +3292,7 @@ textarea:focus {
   white-space: nowrap;
   width: 30px;
   height: 48px;
-  background: url("../image/newarrows2.png") -30px 0px no-repeat;
+  background: url("../image/newarrows3.png") -30px 0px no-repeat;
   -webkit-opacity: 0.7;
   -moz-opacity: 0.7;
   opacity: 0.7;
@@ -3470,7 +3470,7 @@ textarea:focus {
   width: 100%;
 }
 .technic table td, .technic table th {
-  padding: 20px 14px;
+  padding: 10px 14px;
 }
 .technic table thead tr {
   margin: 10px 0px 0px 0px;
