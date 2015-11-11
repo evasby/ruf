@@ -3087,6 +3087,50 @@ textarea:focus {
   color: #cdcdcd;
   margin: -16px 0px 15px 0px;
 }
+.category table {
+  border-collapse: collapse;
+  text-align: left;
+  width: 100%;
+}
+.category table td, .category table th {
+  padding: 10px 10px;
+}
+.category table thead tr {
+  margin: 10px 0px 0px 0px;
+}
+.category table thead th {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #FFE4C4), color-stop(1, #FFE4C4));
+  background: -moz-linear-gradient(center top, #FFE4C4 5%, #FFE4C4 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFE4C4', endColorstr='#FFE4C4');
+  background-color: #FFE4C4;
+  color: #F68A07;
+  font-size: 14px;
+  font-weight: bold;
+  border-left: 1px solid #FFCD92;
+  text-transform: uppercase;
+}
+.category table thead th p {
+  font-size: 14px;
+  font-weight: bold;
+  color: #F68A07;
+  margin: 0px;
+}
+.category table thead th:first-child {
+  border: none;
+}
+.category table tbody td {
+  color: #000000;
+  font-size: 14px;
+  border-bottom: 1px solid #DBD9D0;
+  font-weight: normal;
+}
+.category table tbody td p {
+  margin: 0px;
+}
+.category table tbody td:first-child {
+  border-left: none;
+  font-weight: bold;
+}
 
 .brands {
   padding: 35px 0px 10px 0px;
