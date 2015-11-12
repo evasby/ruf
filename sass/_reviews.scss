@@ -63,4 +63,33 @@
       @include def-opacity(1);
     }
   }
+
+  &_top{
+    @include def-clearfix2();
+    padding: 0px 0px 15px 0px;
+  }
+  &_more{
+    @include link(#000000, #000000);
+    text-decoration: none;
+    border-bottom: 1px dotted #000000;
+    float: right;
+    margin-top: 12px;
+  }
+  &_bottom{
+    @include def-clearfix2();
+    //height: 140px;
+    overflow: hidden;
+    a{
+      float: left;
+      width: 163px;
+      height: 120px;
+      margin: 0px 20px 20px 0px;
+      &:nth-child(4n){
+        margin: 0px 0px 20px 0px;
+      }
+      img{
+        display: block;
+      }
+    }
+  }
 }

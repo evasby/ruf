@@ -10,6 +10,20 @@
 		text-transform: uppercase;
 		margin: 0px 0px 23px 0px;
 	}
+	&_shtaket1{
+		font-family: MyriadProBold;
+		font-size: 16px;
+		color: #f68a07;
+		text-transform: uppercase;
+		margin: 0px 0px 23px 0px;
+	}
+	&_shtaket2{
+		font-family: MyriadProBold;
+		font-size: 16px;
+		color: #f68a07;
+		text-transform: uppercase;
+		margin: 60px 0px -25px 0px;
+	}
 	&_item{
 		@include def-clearfix2();
 		margin: 0px 0px 50px 0px;
