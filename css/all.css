@@ -3330,6 +3330,16 @@ textarea:focus {
 .product_text {
   margin: 0px 0px 0px 0px;
 }
+.product_price {
+  margin: 20px 0px 0px 23px;
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  display: block;
+  height: 36px;
+  width: 138px;
+  background: url("../image/price.png") no-repeat;
+}
 
 .technic {
   overflow: hidden;
