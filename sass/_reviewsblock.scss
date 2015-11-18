@@ -20,6 +20,12 @@
   	color: #f68a07;
   	text-transform: uppercase;
   	margin: 0px 0px 29px 0px;
+  	a{
+  		text-decoration: none;
+  		&:hover{
+  			text-decoration: underline;
+  		}
+  	}
   }
   &_top{
   	@include def-clearfix2();

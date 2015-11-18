@@ -1684,6 +1684,12 @@ textarea:focus {
   text-transform: uppercase;
   margin: 0px 0px 29px 0px;
 }
+.reviewsblock_title a {
+  text-decoration: none;
+}
+.reviewsblock_title a:hover {
+  text-decoration: underline;
+}
 .reviewsblock_top {
   display: inline-table;
   /* ╨Я╤А╤П╤З╨╡╨╝ ╤Б╤В╨╕╨╗╨╕ ╨╛╤В IE ╨┤╨╗╤П mac \*/
@@ -3361,7 +3367,7 @@ textarea:focus {
   width: 100%;
 }
 .technic table td, .technic table th {
-  padding: 10px 14px;
+  padding: 8px 8px;
 }
 .technic table thead tr {
   margin: 10px 0px 0px 0px;
