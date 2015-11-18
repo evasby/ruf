@@ -1,7 +1,7 @@
 .category{
 	@include def-clearfix2();
 	border-bottom: 1px solid #d9dad4;
-	padding: 17px 0px 34px 0px;
+	padding: 17px 0px 0px 0px;
 	&_cost{
     height: 28px;
     span{
@@ -16,8 +16,12 @@
 	}
 	&_text{
 		margin: 0px 0px 0px 0px;
+		padding-bottom: 15px;
 		p{
 			line-height: 1.6;
+			&:last-child{
+				margin-bottom: 10px;
+			}
 		}
 	}
 	&_image{
@@ -61,6 +65,7 @@
     border-collapse: collapse; 
     text-align: left; 
     width: 100%; 
+
   }
   table td, table th { 
     padding: 10px 10px; 

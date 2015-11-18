@@ -2885,7 +2885,7 @@ textarea:focus {
   /* ╨Я╤А╤П╤З╨╡╨╝ ╤Б╤В╨╕╨╗╨╕ ╨╛╤В IE ╨┤╨╗╤П mac \*/
   display: block;
   border-bottom: 1px solid #d9dad4;
-  padding: 17px 0px 34px 0px;
+  padding: 17px 0px 0px 0px;
 }
 .category:after {
   visibility: hidden;
@@ -2909,9 +2909,13 @@ textarea:focus {
 }
 .category_text {
   margin: 0px 0px 0px 0px;
+  padding-bottom: 15px;
 }
 .category_text p {
   line-height: 1.6;
+}
+.category_text p:last-child {
+  margin-bottom: 10px;
 }
 .category_image {
   margin: 0px 0px 25px 0px;
@@ -3008,7 +3012,7 @@ textarea:focus {
 }
 
 .brands {
-  padding: 35px 0px 10px 0px;
+  padding: 0px 0px 10px 0px;
 }
 .brands_wrap {
   border-bottom: 1px solid #d9dad4;
@@ -3018,7 +3022,7 @@ textarea:focus {
   font-size: 20px;
   color: #f68a07;
   text-transform: uppercase;
-  margin: 0px 0px 23px 0px;
+  margin: 15px 0px 23px 0px;
 }
 .brands_shtaket1 {
   font-family: MyriadProBold;
