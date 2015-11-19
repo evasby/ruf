@@ -3563,7 +3563,7 @@ textarea:focus {
   /* ╨Я╤А╤П╤З╨╡╨╝ ╤Б╤В╨╕╨╗╨╕ ╨╛╤В IE ╨┤╨╗╤П mac \*/
   * zoom: 1;
   display: block;
-  margin: 0px 0px 34px 0px;
+  margin: 0px 0px 15px 0px;
 }
 .product:after {
   visibility: hidden;
@@ -3583,6 +3583,9 @@ textarea:focus {
 }
 .product_text {
   margin: 0px 0px 0px 0px;
+}
+.product_text p:last-child {
+  margin-bottom: 0px;
 }
 .product_price {
   margin: 20px 0px 0px 23px;

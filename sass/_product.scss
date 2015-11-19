@@ -1,6 +1,6 @@
 .product{
   @include def-clearfix2();
-  margin: 0px 0px 34px 0px;
+  margin: 0px 0px 15px 0px;
   &_left{
     width: 300px;
     float: left;
@@ -8,6 +8,11 @@
   }
   &_text{
     margin: 0px 0px 0px 0px;
+    p{
+      &:last-child{
+        margin-bottom: 0px;
+      }
+    }
   }
   &_price{
     margin: 20px 0px 0px 23px;
